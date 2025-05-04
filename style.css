@@ -16,25 +16,61 @@
 body {
   margin: 0;
   font-family: 'Gilroy', Arial, sans-serif;
+  padding-top: 0; /* Remove any top padding that might have been added */
 }
   
-/* Header - updated for larger size and better spacing */
+/* Updated sticky header behavior */
 .header {
   display: flex;
   align-items: center;
-  padding: 16px 40px; /* Increased padding for a bigger header */
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-  gap: 25px; /* Moderate gap between elements */
-  justify-content: center; /* Center all elements */
-  max-width: 1200px; /* Limit the width */
-  margin: 0 auto; /* Center the header itself */
-  height: 60px; /* Explicitly set height for a bigger header */
+  padding: 16px 0;
+  justify-content: center;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* Start as relative positioned */
+}
+
+.header.sticky {
+  position: fixed; /* Change to fixed when sticky */
+  top: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Spacer to prevent content jump */
+.header-spacer {
+  height: 0;
+  transition: height 0.3s ease;
+}
+
+/* Add an inner container for the header content */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 40px; /* Add padding to the inner container instead */
+  height: 60px;
+  gap: 30px; /* Add gap between main sections */
 }
   
 .logo {
   display: flex;
   align-items: center;
   flex-shrink: 0; /* Prevent logo from shrinking */
+  gap: 16px; /* Increase gap between logo and location */
 }
   
 .logo img {
@@ -155,7 +191,7 @@ body {
   flex: 0 1 400px; /* Slightly wider search bar */
   display: flex;
   align-items: center;
-  margin: 0 12px; /* Increased horizontal margin */
+  margin: 0 24px; /* Increase margin from 12px to 24px */
   border-radius:50%;
   position: relative; /* Added for absolute positioning of the search icon */
 }
@@ -201,6 +237,7 @@ body {
   justify-content: center;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  margin-left: 12px; /* Add some extra space before the user icon */
 }
 
 .user-icon:hover {
@@ -223,6 +260,7 @@ body {
   position: relative;
   margin: 50px auto; /* Add margins on top/bottom and center horizontally */
   border-radius: 40px; /* Optional: add rounded corners */
+  margin-top: 20px; /* Add some spacing after the sticky header */
 }
 
 .hero img {
@@ -1132,5 +1170,55 @@ body {
   
   .app-buttons {
     align-self: flex-start;
+  }
+}
+
+/* Fix for navbar overflow in restaurant details page */
+.restaurant-header {
+  padding: 0 20px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  flex-shrink: 1; /* Allow this section to shrink if needed */
+  overflow: hidden; /* Hide overflow content */
+  margin-right: 10px; /* Add space between left and right sections */
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0; /* Prevent shrinking of the right section */
+}
+
+/* Make address selector text truncate gracefully */
+.address-details {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px; /* Limit width of address text */
+}
+
+/* Adjust navbar items to be more compact */
+.navbar-item {
+  padding: 0 10px; /* Reduce horizontal padding */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* For really small screens, hide some text and just show icons */
+@media (max-width: 768px) {
+  .navbar-item span {
+    display: none;
+  }
+  
+  .navbar-item {
+    padding: 0 8px;
+  }
+  
+  .address-details {
+    max-width: 150px;
   }
 }

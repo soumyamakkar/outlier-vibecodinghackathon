@@ -334,3 +334,42 @@ function setupStickyHeader() {
     }
   });
 }
+
+// Add this to your script.js file to make the navbar sticky only when reaching the tabs section
+
+document.addEventListener('DOMContentLoaded', function() {
+  const header = document.querySelector('.header');
+  const tabs = document.querySelector('.tabs');
+  
+  if (!header || !tabs) return;
+  
+  // Create a spacer element to prevent content jump when header becomes sticky
+  const spacer = document.createElement('div');
+  spacer.className = 'header-spacer';
+  header.parentNode.insertBefore(spacer, header.nextSibling);
+  
+  // Function to update sticky state
+  function updateStickyHeader() {
+    // Get the position of the tabs element
+    const tabsPosition = tabs.getBoundingClientRect().top;
+    const headerHeight = header.offsetHeight;
+    
+    // If tabs are at or above the top of the viewport, make header sticky
+    if (tabsPosition <= 0) {
+      header.classList.add('sticky');
+      spacer.style.height = headerHeight + 'px';
+    } else {
+      header.classList.remove('sticky');
+      spacer.style.height = '0px';
+    }
+  }
+  
+  // Check on scroll
+  window.addEventListener('scroll', updateStickyHeader);
+  
+  // Initial check
+  updateStickyHeader();
+  
+  // Check on window resize
+  window.addEventListener('resize', updateStickyHeader);
+});
