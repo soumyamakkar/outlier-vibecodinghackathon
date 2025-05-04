@@ -95,6 +95,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Add sticky header functionality
   setupStickyHeader();
+
+  const disclaimerModal = document.getElementById('disclaimerModal');
+  const disclaimerOkBtn = document.getElementById('disclaimerOkBtn');
+  
+  // Show modal on page load if not previously dismissed
+  if (localStorage.getItem('disclaimerDismissed') !== 'true') {
+    // Modal is shown by default
+  } else {
+    disclaimerModal.classList.add('hidden');
+  }
+  
+  // Close modal when OK button is clicked
+  if (disclaimerOkBtn) {
+    disclaimerOkBtn.addEventListener('click', function() {
+      disclaimerModal.classList.add('hidden');
+      
+      // Remember that the disclaimer was dismissed
+      localStorage.setItem('disclaimerDismissed', 'true');
+    });
+  }
 });
 
 // Function to render restaurant cards

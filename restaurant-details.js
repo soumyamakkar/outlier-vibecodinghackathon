@@ -589,6 +589,36 @@ function populateRestaurantDetails(restaurant) {
   
   // Log confirmation
   console.log("Restaurant details populated successfully:", restaurant.name);
+  
+  // When creating menu items, add the button to each item's image container
+  // Look for this part in your code where you create menu items:
+  
+  const menuItems = document.querySelectorAll('.menu-item');
+  menuItems.forEach(menuItem => {
+    const imageContainer = menuItem.querySelector('.item-image-container');
+    if (imageContainer && !imageContainer.querySelector('.add-dish-btn')) {
+      const addButton = document.createElement('button');
+      addButton.className = 'add-dish-btn';
+      addButton.textContent = 'ADD +';
+      imageContainer.appendChild(addButton);
+      
+      // Add click event for the button
+      addButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        // Visual feedback
+        this.textContent = "ADDED ✓";
+        this.classList.add('added');
+        
+        // Reset after animation
+        setTimeout(() => {
+          this.textContent = "ADD +";
+          this.classList.remove('added');
+        }, 1500);
+      });
+    }
+  });
 }
 
 function setupDealsCarousel() {
@@ -1314,4 +1344,61 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Setup allergies dialog
   setupAllergiesDialog();
+});
+
+// Additionally, add this function to handle dynamically created menu items
+function setupMenuItemAddButtons() {
+  // Find all menu item image containers that don't have an ADD button yet
+  const imageContainers = document.querySelectorAll('.item-image-container:not(:has(.add-dish-btn))');
+  
+  imageContainers.forEach(container => {
+    // Create and add the button
+    const addButton = document.createElement('button');
+    addButton.className = 'add-dish-btn';
+    addButton.textContent = 'ADD +';
+    container.appendChild(addButton);
+    
+    // Add click event handler
+    addButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      // Visual feedback
+      this.textContent = "ADDED ✓";
+      this.classList.add('added');
+      
+      // Reset after animation
+      setTimeout(() => {
+        this.textContent = "ADD +";
+        this.classList.remove('added');
+      }, 1500);
+    });
+  });
+}
+
+// Call this function at the end of your document ready handler
+document.addEventListener('DOMContentLoaded', function() {
+  // Your existing initialization code...
+  
+  // Set up a MutationObserver to watch for new menu items being added
+  const observer = new MutationObserver(mutations => {
+    mutations.forEach(mutation => {
+      if (mutation.addedNodes && mutation.addedNodes.length > 0) {
+        // Check if we need to add buttons to new menu items
+        setupMenuItemAddButtons();
+      }
+    });
+  });
+  
+  // Start observing the container where menu items will be loaded
+  const menuContainer = document.querySelector('.restaurant-container');
+  if (menuContainer) {
+    observer.observe(menuContainer, { 
+      childList: true, 
+      subtree: true 
+    });
+  }
+  
+  // Also run initially to catch any existing menu items
+  setTimeout(setupMenuItemAddButtons, 1000);
 });

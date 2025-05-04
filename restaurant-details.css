@@ -451,6 +451,7 @@
 }
 
 .item-image-container {
+  position: relative;
   width: 120px;
   height: 120px;
   border-radius: 8px;
@@ -1914,4 +1915,35 @@
   font-weight: 600;
   margin-bottom: 6px;
   color: white;
+}
+
+/* ADD+ button for menu items */
+.add-dish-btn {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FE5100;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  z-index: 2;
+  white-space: nowrap; /* Prevent text wrapping */
+  line-height: 1; /* Ensure proper vertical alignment */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-dish-btn:hover {
+  background-color: #e64600;
+}
+
+.add-dish-btn.added {
+  background-color: #48a868;
 }

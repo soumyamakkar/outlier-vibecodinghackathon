@@ -1,0 +1,109 @@
+{
+  "dishes": [
+    {
+      "id": "d1",
+      "name": "Butter Chicken",
+      "image": "https://res.cloudinary.com/dxfq3iotg/image/upload/v1559305573/butter-chicken.jpg",
+      "price": "₹299",
+      "description": "Tender chicken pieces cooked in a creamy tomato sauce"
+    },
+    {
+      "id": "d2",
+      "name": "Paneer Tikka",
+      "image": "https://res.cloudinary.com/dxfq3iotg/image/upload/v1559305573/paneer-tikka.jpg",
+      "price": "₹249",
+      "description": "Marinated cottage cheese cubes grilled to perfection"
+    },
+    {
+      "id": "d3",
+      "name": "Masala Dosa",
+      "image": "https://res.cloudinary.com/dxfq3iotg/image/upload/v1559305573/masala-dosa.jpg",
+      "price": "₹129",
+      "description": "Crispy rice crepe with spiced potato filling"
+    },
+    {
+      "id": "d4",
+      "name": "Chicken Biryani",
+      "image": "https://res.cloudinary.com/dxfq3iotg/image/upload/v1559305573/chicken-biryani.jpg",
+      "price": "₹349",
+      "description": "Fragrant basmati rice cooked with tender chicken pieces"
+    },
+    {
+      "id": "d5",
+      "name": "Malai Kofta",
+      "image": "https://res.cloudinary.com/dxfq3iotg/image/upload/v1559305573/malai-kofta.jpg",
+      "price": "₹229",
+      "description": "Stuffed potato and paneer dumplings in a creamy gravy"
+    },
+    {
+      "id": "d6",
+      "name": "Veg Fried Rice",
+      "image": "https://res.cloudinary.com/dxfq3iotg/image/upload/v1559305573/veg-fried-rice.jpg",
+      "price": "₹189",
+      "description": "Stir-fried rice with assorted vegetables"
+    },
+    {
+      "id": "d7",
+      "name": "Gulab Jamun",
+      "image": "https://res.cloudinary.com/dxfq3iotg/image/upload/v1559305573/gulab-jamun.jpg",
+      "price": "₹99",
+      "description": "Deep-fried milk solids soaked in sugar syrup"
+    },
+    {
+      "id": "d8",
+      "name": "Tandoori Roti",
+      "image": "https://res.cloudinary.com/dxfq3iotg/image/upload/v1559305573/tandoori-roti.jpg",
+      "price": "₹30",
+      "description": "Whole wheat flatbread baked in a tandoor"
+    },
+    {
+      "id": "d9",
+      "name": "Chilli Chicken",
+      "image": "https://res.cloudinary.com/dxfq3iotg/image/upload/v1559305573/chilli-chicken.jpg",
+      "price": "₹259",
+      "description": "Spicy chicken stir-fried with bell peppers and onions"
+    },
+    {
+      "id": "d10",
+      "name": "Dal Makhani",
+      "image": "https://res.cloudinary.com/dxfq3iotg/image/upload/v1559305573/dal-makhani.jpg",
+      "price": "₹199",
+      "description": "Creamy black lentils slow-cooked with butter and cream"
+    },
+    {
+      "id": "d11",
+      "name": "Aloo Paratha",
+      "image": "https://res.cloudinary.com/dxfq3iotg/image/upload/v1559305573/aloo-paratha.jpg",
+      "price": "₹79",
+      "description": "Whole wheat flatbread stuffed with spiced potatoes"
+    },
+    {
+      "id": "d12",
+      "name": "Rasgulla",
+      "image": "https://res.cloudinary.com/dxfq3iotg/image/upload/v1559305573/rasgulla.jpg",
+      "price": "₹89",
+      "description": "Soft cottage cheese dumplings soaked in sugar syrup"
+    },
+    {
+      "id": "d13",
+      "name": "Samosa",
+      "image": "https://res.cloudinary.com/dxfq3iotg/image/upload/v1559305573/samosa.jpg",
+      "price": "₹49",
+      "description": "Crispy pastry filled with spiced potatoes and peas"
+    },
+    {
+      "id": "d14",
+      "name": "Naan",
+      "image": "https://res.cloudinary.com/dxfq3iotg/image/upload/v1559305573/naan.jpg",
+      "price": "₹40",
+      "description": "Leavened flatbread baked in a tandoor"
+    },
+    {
+      "id": "d15",
+      "name": "Pav Bhaji",
+      "image": "https://res.cloudinary.com/dxfq3iotg/image/upload/v1559305573/pav-bhaji.jpg",
+      "price": "₹159",
+      "description": "Spiced vegetable mash served with buttered bread rolls"
+    }
+  ]
+}
