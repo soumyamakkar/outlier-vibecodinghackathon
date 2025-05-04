@@ -1,0 +1,2202 @@
+{
+    "restaurants": [
+        {
+            "id": "rawats-kitchen",
+            "name": "Rawat's Kitchen",
+            "cuisine": "North Indian, Chinese",
+            "rating": 4.2,
+            "price": "₹600 for two",
+            "location": "Sector 35, Chandigarh",
+            "distance": "2.5 km",
+            "image": "https://res.cloudinary.com/dh2gwea4g/image/upload/v1746361614/fd4ebec100c5503fbefc33af6f248ef2_hz0wpf.avif",
+            "discount": "FLAT 25% OFF",
+            "offers": [
+                {
+                    "icon": "🏷️",
+                    "text": "Flat 25% OFF on pre-booking"
+                },
+                {
+                    "icon": "🏷️",
+                    "text": "Use code WELCOME20"
+                }
+            ],
+            "details": {
+                "images": [
+                    "https://b.zmtcdn.com/data/pictures/8/19012978/7b9ff84c9001e23f0e0a8d10d939e1dd.jpg",
+                    "https://b.zmtcdn.com/data/pictures/chains/8/19012978/e89f7943914a13ba8b1f2c7ee58a0782.jpg",
+                    "https://b.zmtcdn.com/data/pictures/chains/8/19012978/57291690b6382c27222be3675f675985.jpg"
+                ],
+                "about": "Rawat's Kitchen is a popular dining establishment known for its authentic flavors and inviting ambiance. With a focus on North Indian and Chinese cuisines, this restaurant has earned a reputation for consistently delivering high-quality food using fresh ingredients and traditional recipes with a contemporary twist.",
+                "openingHours": "11:00 AM - 11:00 PM",
+                "address": "SCO 456, Sector 35-C, Chandigarh, 160035",
+                "phone": "+91 9876543210",
+                "facilities": [
+                    "Indoor Seating",
+                    "Air Conditioned",
+                    "Parking",
+                    "Wheelchair Accessible",
+                    "Free Wi-Fi",
+                    "Table Booking"
+                ],
+                "menu": [
+                    {
+                        "category": "Starters",
+                        "items": [
+                            {
+                                "name": "Paneer Tikka",
+                                "price": "₹280",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Chicken Tikka",
+                                "price": "₹320",
+                                "veg": false,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Mushroom 65",
+                                "price": "₹250",
+                                "veg": true
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Main Course",
+                        "items": [
+                            {
+                                "name": "Butter Chicken",
+                                "price": "₹380",
+                                "veg": false,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Paneer Butter Masala",
+                                "price": "₹320",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Dal Makhani",
+                                "price": "₹240",
+                                "veg": true
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Rice & Breads",
+                        "items": [
+                            {
+                                "name": "Jeera Rice",
+                                "price": "₹180",
+                                "veg": true
+                            },
+                            {
+                                "name": "Butter Naan",
+                                "price": "₹60",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Garlic Naan",
+                                "price": "₹70",
+                                "veg": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pal-dhaba",
+            "name": "Pal Dhaba",
+            "cuisine": "Punjabi, North Indian",
+            "rating": 4.5,
+            "price": "₹450 for two",
+            "location": "Sector 28, Chandigarh",
+            "distance": "3.1 km",
+            "image": "https://res.cloudinary.com/dh2gwea4g/image/upload/v1746361714/pal-dhaba-thumbnail_az5zep.avif",
+            "discount": "FLAT 15% OFF",
+            "offers": [
+                {
+                    "icon": "🏷️",
+                    "text": "Flat 15% OFF on pre-booking"
+                },
+                {
+                    "icon": "🏷️",
+                    "text": "Use code WEEKEND10"
+                }
+            ],
+            "details": {
+                "images": [
+                    "https://b.zmtcdn.com/data/pictures/chains/1/18611401/6d05201e92720a4dbb8b6e8973f0df1f.jpg",
+                    "https://b.zmtcdn.com/data/pictures/chains/1/18611401/3a55eca48c4429f66151bc9c9e51703a.jpg",
+                    "https://b.zmtcdn.com/data/pictures/chains/1/18611401/502148a2f0f33883ab38778ec1ef6e97.jpg"
+                ],
+                "about": "Pal Dhaba is one of Chandigarh's most iconic eateries, known for its authentic Punjabi cuisine served in a traditional dhaba style. With over 50 years of culinary heritage, it offers a rustic dining experience that attracts food lovers seeking genuine flavors and generous portions at reasonable prices.",
+                "openingHours": "11:30 AM - 11:00 PM",
+                "address": "SCO 320, Sector 28-D, Chandigarh, 160019",
+                "phone": "+91 9876543211",
+                "facilities": [
+                    "Indoor Seating",
+                    "Outdoor Seating",
+                    "Parking",
+                    "Cash Only"
+                ],
+                "menu": [
+                    {
+                        "category": "Starters",
+                        "items": [
+                            {
+                                "name": "Tandoori Chicken",
+                                "price": "₹320",
+                                "veg": false,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Paneer Pakora",
+                                "price": "₹220",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Fish Amritsari",
+                                "price": "₹380",
+                                "veg": false
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Main Course",
+                        "items": [
+                            {
+                                "name": "Butter Chicken",
+                                "price": "₹360",
+                                "veg": false,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Dal Makhani",
+                                "price": "₹220",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Kadhai Paneer",
+                                "price": "₹280",
+                                "veg": true
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Breads",
+                        "items": [
+                            {
+                                "name": "Tandoori Roti",
+                                "price": "₹30",
+                                "veg": true
+                            },
+                            {
+                                "name": "Butter Naan",
+                                "price": "₹50",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Laccha Paratha",
+                                "price": "₹60",
+                                "veg": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "la-pinoz-pizza",
+            "name": "La Pino'z Pizza",
+            "cuisine": "Pizza, Italian",
+            "rating": 4.1,
+            "price": "₹550 for two",
+            "location": "Sector 9, Chandigarh",
+            "distance": "1.8 km",
+            "image": "https://res.cloudinary.com/dh2gwea4g/image/upload/v1746361786/la-pinoz-thumbnail_rkdq2d.jpg",
+            "discount": "FLAT 30% OFF",
+            "offers": [
+                {
+                    "icon": "🏷️",
+                    "text": "Flat 30% OFF on pre-booking"
+                },
+                {
+                    "icon": "🏷️",
+                    "text": "Use code PIZZA30"
+                }
+            ],
+            "details": {
+                "images": [
+                    "https://b.zmtcdn.com/data/pictures/chains/9/18198449/7b22dc1613a618244c3b5feb5b9eb84f.jpg",
+                    "https://b.zmtcdn.com/data/pictures/chains/9/18198449/10b697f324c5ed0f50f9c2302543885c.jpg",
+                    "https://b.zmtcdn.com/data/pictures/chains/9/18198449/891cab1f7eb3bdc40b94a51742ef7c4d.jpg"
+                ],
+                "about": "La Pino'z Pizza is a popular pizza chain known for its delicious Italian offerings at affordable prices. Their menu includes a wide variety of pizzas, pastas, garlic bread, and more with both vegetarian and non-vegetarian options.",
+                "openingHours": "11:00 AM - 11:30 PM",
+                "address": "SCO 137, Sector 9-C, Chandigarh, 160009",
+                "phone": "+91 9876543212",
+                "facilities": [
+                    "Indoor Seating",
+                    "Home Delivery",
+                    "Takeaway",
+                    "Air Conditioned",
+                    "Free Wi-Fi"
+                ],
+                "menu": [
+                    {
+                        "category": "Pizzas",
+                        "items": [
+                            {
+                                "name": "Margherita",
+                                "price": "₹230",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Pepperoni",
+                                "price": "₹350",
+                                "veg": false,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Farmhouse",
+                                "price": "₹280",
+                                "veg": true
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Pastas",
+                        "items": [
+                            {
+                                "name": "Alfredo Pasta",
+                                "price": "₹260",
+                                "veg": true
+                            },
+                            {
+                                "name": "Arrabiata Pasta",
+                                "price": "₹240",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Chicken Pasta",
+                                "price": "₹320",
+                                "veg": false
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Sides",
+                        "items": [
+                            {
+                                "name": "Garlic Bread",
+                                "price": "₹150",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "French Fries",
+                                "price": "₹120",
+                                "veg": true
+                            },
+                            {
+                                "name": "Chicken Wings",
+                                "price": "₹280",
+                                "veg": false
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "barbeque-nation",
+            "name": "Barbeque Nation",
+            "cuisine": "BBQ, North Indian, Chinese",
+            "rating": 4.3,
+            "price": "₹1400 for two",
+            "location": "Elante Mall, Chandigarh",
+            "distance": "4.2 km",
+            "image": "https://res.cloudinary.com/dh2gwea4g/image/upload/v1746361862/barbeque-nation-thumbnail_k9xpk7.png",
+            "discount": "FLAT 20% OFF",
+            "offers": [
+                {
+                    "icon": "🏷️",
+                    "text": "Flat 20% OFF on pre-booking"
+                },
+                {
+                    "icon": "🏷️",
+                    "text": "Use code BBQ20"
+                }
+            ],
+            "details": {
+                "images": [
+                    "https://b.zmtcdn.com/data/pictures/chains/5/19014825/b14c2f5aac21902c78572c5a7b027569.jpg",
+                    "https://b.zmtcdn.com/data/pictures/chains/5/19014825/06c82e92f4300795add556c1b74d9369.jpg",
+                    "https://b.zmtcdn.com/data/pictures/chains/5/19014825/9922351cacc47230c483e9e8cc2f96c7.jpg"
+                ],
+                "about": "Barbeque Nation is a popular restaurant chain known for its live grill concept where customers can barbecue their own food at their table. They offer an extensive buffet with a wide range of starters, main courses, and desserts from multiple cuisines.",
+                "openingHours": "12:00 PM - 11:00 PM",
+                "address": "3rd Floor, Elante Mall, Phase 1, Chandigarh, 160002",
+                "phone": "+91 9876543213",
+                "facilities": [
+                    "Indoor Seating",
+                    "Buffet",
+                    "Air Conditioned",
+                    "Live Music",
+                    "Table Booking",
+                    "Valet Parking"
+                ],
+                "menu": [
+                    {
+                        "category": "Starters (Live Grill)",
+                        "items": [
+                            {
+                                "name": "Cajun Potatoes",
+                                "price": "Buffet",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Peri Peri Chicken",
+                                "price": "Buffet",
+                                "veg": false,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Garlic Fish Tikka",
+                                "price": "Buffet",
+                                "veg": false
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Main Course",
+                        "items": [
+                            {
+                                "name": "Dal Makhani",
+                                "price": "Buffet",
+                                "veg": true
+                            },
+                            {
+                                "name": "Butter Chicken",
+                                "price": "Buffet",
+                                "veg": false,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Biryani",
+                                "price": "Buffet",
+                                "veg": false
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Desserts",
+                        "items": [
+                            {
+                                "name": "Brownie with Ice Cream",
+                                "price": "Buffet",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Gulab Jamun",
+                                "price": "Buffet",
+                                "veg": true
+                            },
+                            {
+                                "name": "Ice Cream Station",
+                                "price": "Buffet",
+                                "veg": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "sagar-ratna",
+            "name": "Sagar Ratna",
+            "cuisine": "South Indian, North Indian",
+            "rating": 4,
+            "price": "₹500 for two",
+            "location": "Sector 17, Chandigarh",
+            "distance": "0.8 km",
+            "image": "https://res.cloudinary.com/dh2gwea4g/image/upload/v1746361989/sagar-ratna-thumbnail_pkoy5g.avif",
+            "discount": "FLAT 10% OFF",
+            "offers": [
+                {
+                    "icon": "🏷️",
+                    "text": "Flat 10% OFF on pre-booking"
+                },
+                {
+                    "icon": "🏷️",
+                    "text": "Use code DOSA10"
+                }
+            ],
+            "details": {
+                "images": [
+                    "https://b.zmtcdn.com/data/pictures/chains/2/147/49733c7a546e347acb8789f91c92a4a7.jpg",
+                    "https://b.zmtcdn.com/data/pictures/chains/2/147/38c9d54714f69eef4d63b2b333864264.jpg",
+                    "https://b.zmtcdn.com/data/pictures/chains/2/147/35167f4d44223795df701a7b051d56a6.jpg"
+                ],
+                "about": "Sagar Ratna is an iconic South Indian restaurant chain known for its authentic South Indian delicacies like dosas, idlis, and uttapams. They also serve a variety of North Indian dishes, making it a popular choice for family dining.",
+                "openingHours": "8:00 AM - 11:00 PM",
+                "address": "SCO 740, Sector 17-C, Chandigarh, 160017",
+                "phone": "+91 9876543214",
+                "facilities": [
+                    "Indoor Seating",
+                    "Air Conditioned",
+                    "Family Friendly",
+                    "Pure Vegetarian"
+                ],
+                "menu": [
+                    {
+                        "category": "South Indian",
+                        "items": [
+                            {
+                                "name": "Masala Dosa",
+                                "price": "₹180",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Idli Sambar",
+                                "price": "₹120",
+                                "veg": true
+                            },
+                            {
+                                "name": "Uttapam",
+                                "price": "₹160",
+                                "veg": true
+                            }
+                        ]
+                    },
+                    {
+                        "category": "North Indian",
+                        "items": [
+                            {
+                                "name": "Paneer Butter Masala",
+                                "price": "₹280",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Dal Tadka",
+                                "price": "₹200",
+                                "veg": true
+                            },
+                            {
+                                "name": "Veg Pulao",
+                                "price": "₹220",
+                                "veg": true
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Beverages",
+                        "items": [
+                            {
+                                "name": "Filter Coffee",
+                                "price": "₹80",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Lassi",
+                                "price": "₹90",
+                                "veg": true
+                            },
+                            {
+                                "name": "Fresh Lime Soda",
+                                "price": "₹70",
+                                "veg": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "burgrill",
+            "name": "Burgrill",
+            "cuisine": "Burgers, Fast Food",
+            "rating": 4.4,
+            "price": "₹350 for two",
+            "location": "Sector 8, Chandigarh",
+            "distance": "2.1 km",
+            "image": "https://res.cloudinary.com/dh2gwea4g/image/upload/v1746362122/burgrill-thumbnail_f4kx3s.jpg",
+            "discount": "FLAT 25% OFF",
+            "offers": [
+                {
+                    "icon": "🏷️",
+                    "text": "Flat 25% OFF on pre-booking"
+                },
+                {
+                    "icon": "🏷️",
+                    "text": "Use code BURGER25"
+                }
+            ],
+            "details": {
+                "images": [
+                    "https://b.zmtcdn.com/data/pictures/chains/2/18363082/f84a2a121a509d52f51f965532ce11f2.jpg",
+                    "https://b.zmtcdn.com/data/pictures/chains/2/18363082/1254c1caa2f99f3ee5d66efe9592bb05.jpg",
+                    "https://b.zmtcdn.com/data/pictures/chains/2/18363082/29c9f9a66e36416d67c5c4a051e9f1bc.jpg"
+                ],
+                "about": "Burgrill is a popular burger chain known for its grilled burgers, wraps, and shakes. They offer healthier alternatives to traditional fast food with grilled options and premium ingredients.",
+                "openingHours": "11:00 AM - 11:00 PM",
+                "address": "SCO 37, Sector 8-C, Chandigarh, 160008",
+                "phone": "+91 9876543215",
+                "facilities": [
+                    "Indoor Seating",
+                    "Takeaway",
+                    "Home Delivery",
+                    "Free Wi-Fi"
+                ],
+                "menu": [
+                    {
+                        "category": "Burgers",
+                        "items": [
+                            {
+                                "name": "Classic Chicken Burger",
+                                "price": "₹180",
+                                "veg": false,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Paneer Tandoori Burger",
+                                "price": "₹160",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Lamb Burger",
+                                "price": "₹220",
+                                "veg": false
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Sides",
+                        "items": [
+                            {
+                                "name": "French Fries",
+                                "price": "₹110",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Chicken Wings",
+                                "price": "₹220",
+                                "veg": false
+                            },
+                            {
+                                "name": "Onion Rings",
+                                "price": "₹130",
+                                "veg": true
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Beverages",
+                        "items": [
+                            {
+                                "name": "Chocolate Shake",
+                                "price": "₹150",
+                                "veg": true
+                            },
+                            {
+                                "name": "Cold Coffee",
+                                "price": "₹130",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Fresh Lime Soda",
+                                "price": "₹90",
+                                "veg": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "social",
+            "name": "Social",
+            "cuisine": "Continental, American, Asian",
+            "rating": 4.2,
+            "price": "₹1200 for two",
+            "location": "Sector 7, Chandigarh",
+            "distance": "1.5 km",
+            "image": "https://res.cloudinary.com/dh2gwea4g/image/upload/v1746362203/social-thumbnail_libzae.jpg",
+            "discount": "FLAT 15% OFF",
+            "offers": [
+                {
+                    "icon": "🏷️",
+                    "text": "Flat 15% OFF on pre-booking"
+                },
+                {
+                    "icon": "🏷️",
+                    "text": "Use code SOCIAL15"
+                }
+            ],
+            "details": {
+                "images": [
+                    "https://b.zmtcdn.com/data/pictures/6/19514886/6fb195b4fd475dcc1556216c475e1152.jpg",
+                    "https://b.zmtcdn.com/data/pictures/6/19514886/4ef3b7b7cb410176e0f73552c184885f.jpg",
+                    "https://b.zmtcdn.com/data/pictures/6/19514886/515a462bbf52fc5c4d205b1cf9dcc99a.jpg"
+                ],
+                "about": "Social is a popular chain of cafes and bars known for their quirky ambiance, creative cocktails, and fusion food. It's a vibrant space that doubles as a workspace during the day and a high-energy bar at night.",
+                "openingHours": "11:00 AM - 1:00 AM",
+                "address": "SCO 218, Sector 7-C, Madhya Marg, Chandigarh, 160019",
+                "phone": "+91 9876543216",
+                "facilities": [
+                    "Indoor Seating",
+                    "Outdoor Seating",
+                    "Bar",
+                    "Live Music",
+                    "Workspace",
+                    "Table Booking"
+                ],
+                "menu": [
+                    {
+                        "category": "Small Plates",
+                        "items": [
+                            {
+                                "name": "Butter Chicken Biryani",
+                                "price": "₹320",
+                                "veg": false,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Chilli Cheese Toastie",
+                                "price": "₹220",
+                                "veg": true
+                            },
+                            {
+                                "name": "Death Wings",
+                                "price": "₹280",
+                                "veg": false,
+                                "bestseller": true
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Big Plates",
+                        "items": [
+                            {
+                                "name": "Butter Board",
+                                "price": "₹380",
+                                "veg": true
+                            },
+                            {
+                                "name": "Paneer Butter Masala",
+                                "price": "₹320",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Chinese Bhel",
+                                "price": "₹240",
+                                "veg": true
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Signature Cocktails",
+                        "items": [
+                            {
+                                "name": "LIIT",
+                                "price": "₹350",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Whiskey Sour",
+                                "price": "₹280",
+                                "veg": true
+                            },
+                            {
+                                "name": "Social Sangria",
+                                "price": "₹320",
+                                "veg": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "dera",
+            "name": "Dera",
+            "cuisine": "North Indian, Mughlai",
+            "rating": 4.5,
+            "price": "₹800 for two",
+            "location": "Sector 26, Chandigarh",
+            "distance": "3.7 km",
+            "image": "https://res.cloudinary.com/dh2gwea4g/image/upload/v1746362263/dera-thumbnail_cabyif.avif",
+            "discount": "FLAT 20% OFF",
+            "offers": [
+                {
+                    "icon": "🏷️",
+                    "text": "Flat 20% OFF on pre-booking"
+                },
+                {
+                    "icon": "🏷️",
+                    "text": "Use code DERA20"
+                }
+            ],
+            "details": {
+                "images": [
+                    "https://b.zmtcdn.com/data/pictures/6/18496886/fb4c78f5c685c35c14db7c3d8528a136.jpg",
+                    "https://b.zmtcdn.com/data/pictures/chains/6/18496886/eb732b2a3704cb20233ae6ecaa175d93.jpg",
+                    "https://b.zmtcdn.com/data/pictures/chains/6/18496886/add2a571e82a8487969033748fe9a1d5.jpg"
+                ],
+                "about": "Dera is an upscale restaurant serving authentic North Indian and Mughlai cuisine in a rustic yet elegant setting. Known for its tandoor items and rich curries, it offers a royal dining experience celebrating the flavors of Punjab and the Northwest Frontier.",
+                "openingHours": "12:00 PM - 11:30 PM",
+                "address": "SCO 1, Sector 26, Chandigarh, 160019",
+                "phone": "+91 9876543217",
+                "facilities": [
+                    "Indoor Seating",
+                    "Outdoor Seating",
+                    "Valet Parking",
+                    "Live Music",
+                    "Table Booking",
+                    "Bar"
+                ],
+                "menu": [
+                    {
+                        "category": "Starters",
+                        "items": [
+                            {
+                                "name": "Tandoori Chicken",
+                                "price": "₹350",
+                                "veg": false,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Paneer Tikka",
+                                "price": "₹320",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Amritsari Fish",
+                                "price": "₹420",
+                                "veg": false
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Main Course",
+                        "items": [
+                            {
+                                "name": "Butter Chicken",
+                                "price": "₹420",
+                                "veg": false,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Dal Makhani",
+                                "price": "₹280",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Mutton Rogan Josh",
+                                "price": "₹450",
+                                "veg": false
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Breads & Rice",
+                        "items": [
+                            {
+                                "name": "Garlic Naan",
+                                "price": "₹80",
+                                "veg": true
+                            },
+                            {
+                                "name": "Butter Roti",
+                                "price": "₹50",
+                                "veg": true
+                            },
+                            {
+                                "name": "Jeera Rice",
+                                "price": "₹180",
+                                "veg": true,
+                                "bestseller": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "backpackers-cafe",
+            "name": "Backpackers Cafe",
+            "cuisine": "Cafe, Italian, Continental",
+            "rating": 4.3,
+            "price": "₹750 for two",
+            "location": "Sector 9, Chandigarh",
+            "distance": "1.9 km",
+            "image": "https://res.cloudinary.com/dh2gwea4g/image/upload/v1746362318/backpackers-thumbnail_ff8p5a.jpg",
+            "discount": "FLAT 30% OFF",
+            "offers": [
+                {
+                    "icon": "🏷️",
+                    "text": "Flat 30% OFF on pre-booking"
+                },
+                {
+                    "icon": "🏷️",
+                    "text": "Use code CAFE30"
+                }
+            ],
+            "details": {
+                "images": [
+                    "https://b.zmtcdn.com/data/pictures/chains/2/18363082/29c9f9a66e36416d67c5c4a051e9f1bc.jpg",
+                    "https://b.zmtcdn.com/data/pictures/chains/2/18363082/1254c1caa2f99f3ee5d66efe9592bb05.jpg",
+                    "https://b.zmtcdn.com/data/pictures/chains/2/18363082/f84a2a121a509d52f51f965532ce11f2.jpg"
+                ],
+                "about": "Backpackers Cafe is a cozy eatery that offers a mix of Continental, Italian, and Mediterranean cuisine. With its relaxed atmosphere and travel-themed decor, it's a popular spot for breakfast, brunch, and casual dining among students and young professionals.",
+                "openingHours": "9:00 AM - 11:00 PM",
+                "address": "SCO 444, Sector 9-C, Chandigarh, 160009",
+                "phone": "+91 9876543218",
+                "facilities": [
+                    "Indoor Seating",
+                    "Outdoor Seating",
+                    "Free Wi-Fi",
+                    "Pet Friendly",
+                    "Book Shelf"
+                ],
+                "menu": [
+                    {
+                        "category": "All-day Breakfast",
+                        "items": [
+                            {
+                                "name": "English Breakfast",
+                                "price": "₹320",
+                                "veg": false,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Pancake Stack",
+                                "price": "₹220",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Eggs Benedict",
+                                "price": "₹280",
+                                "veg": false
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Mains",
+                        "items": [
+                            {
+                                "name": "Penne Arrabiata",
+                                "price": "₹280",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Grilled Chicken Steak",
+                                "price": "₹380",
+                                "veg": false
+                            },
+                            {
+                                "name": "Mediterranean Platter",
+                                "price": "₹350",
+                                "veg": true
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Beverages",
+                        "items": [
+                            {
+                                "name": "Cappuccino",
+                                "price": "₹150",
+                                "veg": true
+                            },
+                            {
+                                "name": "Fresh Fruit Smoothie",
+                                "price": "₹180",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Iced Tea",
+                                "price": "₹120",
+                                "veg": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "pirates-of-grill",
+            "name": "Pirates of Grill",
+            "cuisine": "North Indian, Chinese, BBQ",
+            "rating": 4.4,
+            "price": "₹1500 for two",
+            "location": "Elante Mall, Chandigarh",
+            "distance": "4.2 km",
+            "image": "https://res.cloudinary.com/dh2gwea4g/image/upload/v1746362447/pog-thumbnail_gzdwbh.jpg",
+            "discount": "FLAT 25% OFF",
+            "offers": [
+                {
+                    "icon": "🏷️",
+                    "text": "Flat 25% OFF on pre-booking"
+                },
+                {
+                    "icon": "🏷️",
+                    "text": "Use code PIRATES25"
+                }
+            ],
+            "details": {
+                "images": [
+                    "https://b.zmtcdn.com/data/pictures/chains/5/18594985/42a609c3f06433d1a68a96e8c7cadb12.jpg",
+                    "https://b.zmtcdn.com/data/pictures/chains/5/18594985/4f8d3556905afc6e3b6485c1f32af0d7.jpg",
+                    "https://b.zmtcdn.com/data/pictures/chains/5/18594985/269e5c39c9c2c2f28953d7dbf50b5bf8.jpg"
+                ],
+                "about": "Pirates of Grill is a popular buffet restaurant known for its live grill concept, extensive menu, and vibrant ambiance. Guests can grill their own starters at the table and enjoy a vast spread of main courses and desserts from various cuisines.",
+                "openingHours": "12:00 PM - 11:30 PM",
+                "address": "3rd Floor, Elante Mall, Phase 1, Chandigarh, 160002",
+                "phone": "+91 9876543219",
+                "facilities": [
+                    "Indoor Seating",
+                    "Buffet",
+                    "Live Grill",
+                    "Bar",
+                    "Air Conditioned",
+                    "Valet Parking"
+                ],
+                "menu": [
+                    {
+                        "category": "Live Grill Starters",
+                        "items": [
+                            {
+                                "name": "Tandoori Chicken",
+                                "price": "Buffet",
+                                "veg": false,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Paneer Tikka",
+                                "price": "Buffet",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Grilled Fish",
+                                "price": "Buffet",
+                                "veg": false
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Main Course",
+                        "items": [
+                            {
+                                "name": "Dal Makhani",
+                                "price": "Buffet",
+                                "veg": true
+                            },
+                            {
+                                "name": "Butter Chicken",
+                                "price": "Buffet",
+                                "veg": false,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Veg Biryani",
+                                "price": "Buffet",
+                                "veg": true
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Desserts",
+                        "items": [
+                            {
+                                "name": "Ice Cream",
+                                "price": "Buffet",
+                                "veg": true
+                            },
+                            {
+                                "name": "Gulab Jamun",
+                                "price": "Buffet",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Pastries",
+                                "price": "Buffet",
+                                "veg": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "chilis",
+            "name": "Chili's",
+            "cuisine": "Mexican, American, Italian",
+            "rating": 4.3,
+            "price": "₹1400 for two",
+            "location": "Sector 35, Chandigarh",
+            "distance": "3.3 km",
+            "image": "https://res.cloudinary.com/dh2gwea4g/image/upload/v1746362508/chilis-chandigarh_jnt4gm.jpg",
+            "discount": "FLAT 20% OFF",
+            "offers": [
+                {
+                    "icon": "🏷️",
+                    "text": "Flat 20% OFF on pre-booking"
+                },
+                {
+                    "icon": "🏷️",
+                    "text": "Use code CHILIS20"
+                }
+            ],
+            "details": {
+                "images": [
+                    "https://b.zmtcdn.com/data/pictures/chains/9/18533659/4b9c0de579cb53f2b064e2165dea7047.jpg",
+                    "https://b.zmtcdn.com/data/pictures/chains/9/18533659/6d4d3e7b1ea8157a7eee005ede127abb.jpg",
+                    "https://b.zmtcdn.com/data/pictures/chains/9/18533659/d257c4c40a7446a7ce835faeeb299b6f.jpg"
+                ],
+                "about": "Chili's is an American restaurant chain featuring Tex-Mex cuisine. Known for its signature dishes like Baby Back Ribs, Fajitas, and Molten Chocolate Cake, it offers a casual dining experience with a vibrant atmosphere.",
+                "openingHours": "11:00 AM - 11:00 PM",
+                "address": "SCO 195-196, Sector 35-C, Chandigarh, 160022",
+                "phone": "+91 9876543220",
+                "facilities": [
+                    "Indoor Seating",
+                    "Air Conditioned",
+                    "Full Bar",
+                    "Table Booking",
+                    "Wheelchair Accessible"
+                ],
+                "menu": [
+                    {
+                        "category": "Appetizers",
+                        "items": [
+                            {
+                                "name": "Classic Nachos",
+                                "price": "₹380",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Chicken Wings",
+                                "price": "₹420",
+                                "veg": false,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Southwestern Egg Rolls",
+                                "price": "₹350",
+                                "veg": false
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Main Course",
+                        "items": [
+                            {
+                                "name": "Baby Back Ribs",
+                                "price": "₹850",
+                                "veg": false,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Classic Fajitas",
+                                "price": "₹650",
+                                "veg": false
+                            },
+                            {
+                                "name": "Mushroom Jack Fajita",
+                                "price": "₹550",
+                                "veg": true
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Desserts",
+                        "items": [
+                            {
+                                "name": "Molten Chocolate Cake",
+                                "price": "₹350",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Cheesecake",
+                                "price": "₹320",
+                                "veg": true
+                            },
+                            {
+                                "name": "Brownie Sundae",
+                                "price": "₹280",
+                                "veg": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "subway",
+            "name": "Subway",
+            "cuisine": "Sandwiches, Salads, Fast Food",
+            "rating": 4,
+            "price": "₹400 for two",
+            "location": "Sector 17, Chandigarh",
+            "distance": "0.7 km",
+            "image": "https://res.cloudinary.com/dh2gwea4g/image/upload/v1746362586/subway-thumbnail_sk5swy.avif",
+            "discount": "FLAT 15% OFF",
+            "offers": [
+                {
+                    "icon": "🏷️",
+                    "text": "Flat 15% OFF on pre-booking"
+                },
+                {
+                    "icon": "🏷️",
+                    "text": "Use code SUB15"
+                }
+            ],
+            "details": {
+                "images": [
+                    "https://b.zmtcdn.com/data/pictures/chains/3/310183/b0af89679f55dfd36a19fa71ed67d0e5.jpg",
+                    "https://b.zmtcdn.com/data/pictures/chains/3/310183/635b62e4a35dd3f1692acd74c63239b7.jpg",
+                    "https://b.zmtcdn.com/data/pictures/chains/3/310183/f4a094d3bd1b8c4ec9bb814f8dc4379f.jpg"
+                ],
+                "about": "Subway is a global fast food chain specializing in submarine sandwiches and salads. Known for its customizable menu, where customers can build their own sandwiches with a variety of fresh ingredients and breads, it's popular for its healthier fast food options.",
+                "openingHours": "9:00 AM - 11:00 PM",
+                "address": "SCO 412, Sector 17-D, Chandigarh, 160017",
+                "phone": "+91 9876543221",
+                "facilities": [
+                    "Indoor Seating",
+                    "Takeaway",
+                    "Home Delivery",
+                    "Air Conditioned"
+                ],
+                "menu": [
+                    {
+                        "category": "Subs",
+                        "items": [
+                            {
+                                "name": "Veggie Delite",
+                                "price": "₹180",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Chicken Teriyaki",
+                                "price": "₹230",
+                                "veg": false,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Italian BMT",
+                                "price": "₹250",
+                                "veg": false
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Salads",
+                        "items": [
+                            {
+                                "name": "Veggie Delite Salad",
+                                "price": "₹210",
+                                "veg": true
+                            },
+                            {
+                                "name": "Chicken Teriyaki Salad",
+                                "price": "₹260",
+                                "veg": false
+                            },
+                            {
+                                "name": "Tuna Salad",
+                                "price": "₹250",
+                                "veg": false,
+                                "bestseller": true
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Sides & Beverages",
+                        "items": [
+                            {
+                                "name": "Cookies",
+                                "price": "₹50",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Fountain Soda",
+                                "price": "₹80",
+                                "veg": true
+                            },
+                            {
+                                "name": "Chips",
+                                "price": "₹60",
+                                "veg": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "cafe-coffee-day",
+            "name": "Cafe Coffee Day",
+            "cuisine": "Cafe, Beverages, Desserts",
+            "rating": 4,
+            "price": "₹400 for two",
+            "location": "Sector 22, Chandigarh",
+            "distance": "1.3 km",
+            "image": "https://res.cloudinary.com/dh2gwea4g/image/upload/v1746362653/ccd-thumbnail_ohhufk.jpg",
+            "discount": "FLAT 15% OFF",
+            "offers": [
+                {
+                    "icon": "🏷️",
+                    "text": "Flat 15% OFF on pre-booking"
+                },
+                {
+                    "icon": "🏷️",
+                    "text": "Use code COFFEE15"
+                }
+            ],
+            "details": {
+                "images": [
+                    "https://b.zmtcdn.com/data/pictures/chains/6/18382226/2db18a7fef846467fd1f4c18b7dcba40.jpg",
+                    "https://b.zmtcdn.com/data/pictures/chains/6/18382226/addd52d3abf45bfa546fcb30756d0fd9.jpg",
+                    "https://b.zmtcdn.com/data/pictures/chains/6/18382226/d3f9cf8286a0eb31cdab9cf3605d70bf.jpg"
+                ],
+                "about": "Cafe Coffee Day is India's largest coffee chain. It offers a variety of coffee drinks, other beverages, and light food options in a cozy cafe environment. Popular among students and professionals as a meeting spot, it's known for its signature coffees and relaxed atmosphere.",
+                "openingHours": "9:00 AM - 11:00 PM",
+                "address": "SCO 58-59, Sector 22-C, Chandigarh, 160022",
+                "phone": "+91 9876543222",
+                "facilities": [
+                    "Indoor Seating",
+                    "Outdoor Seating",
+                    "Free Wi-Fi",
+                    "Air Conditioned",
+                    "Workspace"
+                ],
+                "menu": [
+                    {
+                        "category": "Coffee",
+                        "items": [
+                            {
+                                "name": "Cappuccino",
+                                "price": "₹160",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Cafe Latte",
+                                "price": "₹170",
+                                "veg": true
+                            },
+                            {
+                                "name": "Cold Coffee",
+                                "price": "₹190",
+                                "veg": true,
+                                "bestseller": true
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Food",
+                        "items": [
+                            {
+                                "name": "Veg Sandwich",
+                                "price": "₹180",
+                                "veg": true
+                            },
+                            {
+                                "name": "Chocolate Truffle Cake",
+                                "price": "₹150",
+                                "veg": true,
+                                "bestseller": true
+                            },
+                            {
+                                "name": "Grilled Chicken Sandwich",
+                                "price": "₹220",
+                                "veg": false
+                            }
+                        ]
+                    },
+                    {
+                        "category": "Beverages",
+                        "items": [
+                            {
+                                "name": "Tropical Iceberg",
+                                "price": "₹180",
+                                "veg": true
+                            }
+                        ]
+                    },
+                    {
+                        "id": "mcdonalds",
+                        "name": "McDonald's",
+                        "cuisine": "Fast Food, Burgers",
+                        "rating": 4.1,
+                        "price": "₹450 for two",
+                        "location": "Sector 35, Chandigarh",
+                        "distance": "2.8 km",
+                        "offers": [
+                            {
+                                "icon": "🏷️",
+                                "text": "Flat 20% OFF on pre-booking"
+                            },
+                            {
+                                "icon": "🏷️",
+                                "text": "Use code MCDONALDS20"
+                            }
+                        ],
+                        "image": "https://b.zmtcdn.com/data/pictures/chains/4/18765714/32c78ca991e932a210c01aa9570d7ceb.jpg",
+                        "images": [
+                            "https://b.zmtcdn.com/data/pictures/chains/4/18765714/32c78ca991e932a210c01aa9570d7ceb.jpg",
+                            "https://b.zmtcdn.com/data/pictures/chains/4/18765714/84058dd9d13958cdd261221f5dcc0c1c.jpg",
+                            "https://b.zmtcdn.com/data/pictures/chains/4/18765714/ee484f14f046516f5bae98dcb10662de.jpg"
+                        ],
+                        "discount": "FLAT 20% OFF",
+                        "description": "Iconic fast-food chain known for burgers, fries and Happy Meals.",
+                        "about": "McDonald's is a global fast-food giant recognized for its consistent quality and quick service. The restaurant offers a menu of burgers, wraps, fries, and desserts adapted to local tastes. With its bright, family-friendly atmosphere, efficient counter service, and McCafé offering premium coffee options, it's a popular choice for casual dining and quick bites.",
+                        "openingHours": "10:00 AM - 11:00 PM",
+                        "address": "SCO 371-372, Sector 35-B, Chandigarh, 160035",
+                        "phone": "+91 9876543223",
+                        "facilities": [
+                            "Indoor Seating",
+                            "Drive-thru",
+                            "Home Delivery",
+                            "Air Conditioned",
+                            "Children's Play Area"
+                        ],
+                        "menu": [
+                            {
+                                "category": "Burgers",
+                                "items": [
+                                    {
+                                        "name": "McAloo Tikki Burger",
+                                        "price": "₹49",
+                                        "veg": true,
+                                        "bestseller": true
+                                    },
+                                    {
+                                        "name": "McChicken",
+                                        "price": "₹125",
+                                        "veg": false,
+                                        "bestseller": true
+                                    },
+                                    {
+                                        "name": "McVeggie",
+                                        "price": "₹119",
+                                        "veg": true
+                                    }
+                                ]
+                            },
+                            {
+                                "category": "Meals",
+                                "items": [
+                                    {
+                                        "name": "McChicken Meal",
+                                        "price": "₹209",
+                                        "veg": false,
+                                        "bestseller": true
+                                    },
+                                    {
+                                        "name": "McAloo Tikki Meal",
+                                        "price": "₹149",
+                                        "veg": true
+                                    },
+                                    {
+                                        "name": "Happy Meal",
+                                        "price": "₹199",
+                                        "veg": false
+                                    }
+                                ]
+                            },
+                            {
+                                "category": "Sides & Beverages",
+                                "items": [
+                                    {
+                                        "name": "French Fries (M)",
+                                        "price": "₹99",
+                                        "veg": true,
+                                        "bestseller": true
+                                    },
+                                    {
+                                        "name": "Soft Serve",
+                                        "price": "₹25",
+                                        "veg": true,
+                                        "bestseller": true
+                                    },
+                                    {
+                                        "name": "Coke",
+                                        "price": "₹79",
+                                        "veg": true
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "dominos-pizza",
+                        "name": "Domino's Pizza",
+                        "cuisine": "Pizza, Fast Food",
+                        "rating": 4,
+                        "price": "₹400 for two",
+                        "location": "Sector 9, Chandigarh",
+                        "distance": "1.2 km",
+                        "offers": [
+                            {
+                                "icon": "🏷️",
+                                "text": "Flat 25% OFF on pre-booking"
+                            },
+                            {
+                                "icon": "🏷️",
+                                "text": "Use code DOMINOS25"
+                            }
+                        ],
+                        "image": "https://b.zmtcdn.com/data/pictures/chains/8/18742288/d26f90bc391e3e629d0ae071d467c9a8.jpg",
+                        "images": [
+                            "https://b.zmtcdn.com/data/pictures/chains/8/18742288/d26f90bc391e3e629d0ae071d467c9a8.jpg",
+                            "https://b.zmtcdn.com/data/pictures/chains/8/18742288/d32223e18467539b161c9f9112623d0e.jpg",
+                            "https://b.zmtcdn.com/data/pictures/chains/8/18742288/6e3219ce82b573da50700f78afd5f481.jpg"
+                        ],
+                        "discount": "FLAT 25% OFF",
+                        "description": "Global pizza delivery chain known for quick service and variety of toppings.",
+                        "about": "Domino's Pizza is a global pizza delivery chain renowned for its 30-minute delivery guarantee and wide variety of pizzas with customizable crusts and toppings. The restaurant specializes in quick service and consistent quality, making it a go-to option for casual dining, takeaways, and home deliveries for pizza lovers.",
+                        "openingHours": "11:00 AM - 11:00 PM",
+                        "address": "SCO 333, Sector 9-D, Chandigarh, 160009",
+                        "phone": "+91 9876543224",
+                        "facilities": [
+                            "Indoor Seating",
+                            "Home Delivery",
+                            "Takeaway",
+                            "Air Conditioned",
+                            "Online Ordering"
+                        ],
+                        "menu": [
+                            {
+                                "category": "Pizzas",
+                                "items": [
+                                    {
+                                        "name": "Margherita",
+                                        "price": "₹199",
+                                        "veg": true,
+                                        "bestseller": true
+                                    },
+                                    {
+                                        "name": "Peppy Paneer",
+                                        "price": "₹329",
+                                        "veg": true,
+                                        "bestseller": true
+                                    },
+                                    {
+                                        "name": "Chicken Dominator",
+                                        "price": "₹409",
+                                        "veg": false
+                                    }
+                                ]
+                            },
+                            {
+                                "category": "Sides",
+                                "items": [
+                                    {
+                                        "name": "Garlic Breadsticks",
+                                        "price": "₹149",
+                                        "veg": true,
+                                        "bestseller": true
+                                    },
+                                    {
+                                        "name": "Stuffed Garlic Bread",
+                                        "price": "₹169",
+                                        "veg": true
+                                    },
+                                    {
+                                        "name": "Chicken Wings",
+                                        "price": "₹199",
+                                        "veg": false
+                                    }
+                                ]
+                            },
+                            {
+                                "category": "Beverages & Desserts",
+                                "items": [
+                                    {
+                                        "name": "Pepsi",
+                                        "price": "₹59",
+                                        "veg": true
+                                    },
+                                    {
+                                        "name": "Choco Lava Cake",
+                                        "price": "₹99",
+                                        "veg": true,
+                                        "bestseller": true
+                                    },
+                                    {
+                                        "name": "Butterscotch Mousse Cake",
+                                        "price": "₹89",
+                                        "veg": true
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "burger-king",
+                        "name": "Burger King",
+                        "cuisine": "Burgers, Fast Food",
+                        "rating": 4.2,
+                        "price": "₹350 for two",
+                        "location": "Elante Mall, Chandigarh",
+                        "distance": "4.0 km",
+                        "offers": [
+                            {
+                                "icon": "🏷️",
+                                "text": "Flat 30% OFF on pre-booking"
+                            },
+                            {
+                                "icon": "🏷️",
+                                "text": "Use code WHOPPER30"
+                            }
+                        ],
+                        "image": "https://b.zmtcdn.com/data/pictures/chains/8/18216638/e52c9d3b21e2e5b62a979063bd31f915.jpg",
+                        "images": [
+                            "https://b.zmtcdn.com/data/pictures/chains/8/18216638/e52c9d3b21e2e5b62a979063bd31f915.jpg",
+                            "https://b.zmtcdn.com/data/pictures/chains/8/18216638/909d3b957f791bdeffa3fbfabc84d2ef.jpg",
+                            "https://b.zmtcdn.com/data/pictures/chains/8/18216638/a6c1a3733a9235a742f9237b8dbbccde.jpg"
+                        ],
+                        "discount": "FLAT 30% OFF",
+                        "description": "Global burger chain known for flame-grilled burgers and Whopper.",
+                        "about": "Burger King is a global fast-food chain famous for its signature flame-grilled burgers, especially the Whopper. The restaurant prides itself on customization, allowing customers to have their burgers their way with a variety of toppings, sauces, and sides to choose from, all served in a casual, friendly environment.",
+                        "openingHours": "10:00 AM - 11:00 PM",
+                        "address": "Food Court, 3rd Floor, Elante Mall, Industrial Area Phase 1, Chandigarh, 160002",
+                        "phone": "+91 9876543225",
+                        "facilities": [
+                            "Indoor Seating",
+                            "Home Delivery",
+                            "Takeaway",
+                            "Air Conditioned",
+                            "Kid-Friendly"
+                        ],
+                        "menu": [
+                            {
+                                "category": "Burgers",
+                                "items": [
+                                    {
+                                        "name": "Whopper",
+                                        "price": "₹179",
+                                        "veg": false,
+                                        "bestseller": true
+                                    },
+                                    {
+                                        "name": "Veg Whopper",
+                                        "price": "₹169",
+                                        "veg": true,
+                                        "bestseller": true
+                                    },
+                                    {
+                                        "name": "Chicken Crispy Burger",
+                                        "price": "₹99",
+                                        "veg": false
+                                    }
+                                ]
+                            },
+                            {
+                                "category": "Sides",
+                                "items": [
+                                    {
+                                        "name": "Medium Fries",
+                                        "price": "₹99",
+                                        "veg": true,
+                                        "bestseller": true
+                                    },
+                                    {
+                                        "name": "Chicken Nuggets (6 pcs)",
+                                        "price": "₹149",
+                                        "veg": false
+                                    },
+                                    {
+                                        "name": "Veggie Strips",
+                                        "price": "₹129",
+                                        "veg": true
+                                    }
+                                ]
+                            },
+                            {
+                                "category": "Beverages",
+                                "items": [
+                                    {
+                                        "name": "Pepsi",
+                                        "price": "₹79",
+                                        "veg": true
+                                    },
+                                    {
+                                        "name": "Chocolate Shake",
+                                        "price": "₹159",
+                                        "veg": true,
+                                        "bestseller": true
+                                    },
+                                    {
+                                        "name": "Mango Shake",
+                                        "price": "₹149",
+                                        "veg": true
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "chaayos",
+                        "name": "Chaayos",
+                        "cuisine": "Cafe, Beverages, Indian",
+                        "rating": 4.3,
+                        "price": "₹300 for two",
+                        "location": "Sector 17, Chandigarh",
+                        "distance": "0.9 km",
+                        "image": "https://b.zmtcdn.com/data/pictures/chains/2/18363082/1254c1caa2f99f3ee5d66efe9592bb05.jpg",
+                        "discount": "FLAT 15% OFF",
+                        "offers": [
+                            {
+                                "icon": "🏷️",
+                                "text": "Flat 15% OFF on pre-booking"
+                            },
+                            {
+                                "icon": "🏷️",
+                                "text": "Use code CHAI15"
+                            }
+                        ],
+                        "details": {
+                            "images": [
+                                "https://b.zmtcdn.com/data/pictures/chains/2/18363082/1254c1caa2f99f3ee5d66efe9592bb05.jpg",
+                                "https://b.zmtcdn.com/data/pictures/chains/2/18363082/dc79e6f21f4594e5c0d40ce0b98d06c2.jpg",
+                                "https://b.zmtcdn.com/data/pictures/chains/2/18363082/d9939db5f7e94221b13a2aee44a3ffd2.jpg"
+                            ],
+                            "about": "Chaayos is a contemporary tea cafe that has reimagined the traditional Indian tea experience with the concept of 'Meri Wali Chai' (My Style of Tea). Offering over 25 customization options for tea alongside a menu of Indian comfort food and snacks, it provides a cozy space for casual meetings, work sessions, or relaxed conversations over a perfect cup of chai.",
+                            "openingHours": "09:00 AM - 11:00 PM",
+                            "address": "SCO 147, Sector 17-D, Chandigarh, 160017",
+                            "phone": "+91 9876543226",
+                            "facilities": [
+                                "Indoor Seating",
+                                "Free Wi-Fi",
+                                "Air Conditioned",
+                                "Takeaway",
+                                "Board Games"
+                            ],
+                            "menu": [
+                                {
+                                    "category": "Chai",
+                                    "items": [
+                                        {
+                                            "name": "Adrak Chai",
+                                            "price": "₹89",
+                                            "veg": true,
+                                            "bestseller": true
+                                        },
+                                        {
+                                            "name": "Masala Chai",
+                                            "price": "₹89",
+                                            "veg": true,
+                                            "bestseller": true
+                                        },
+                                        {
+                                            "name": "Kadak Chai",
+                                            "price": "₹99",
+                                            "veg": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "category": "Snacks",
+                                    "items": [
+                                        {
+                                            "name": "Bun Maska",
+                                            "price": "₹99",
+                                            "veg": true,
+                                            "bestseller": true
+                                        },
+                                        {
+                                            "name": "Vada Pav",
+                                            "price": "₹129",
+                                            "veg": true
+                                        },
+                                        {
+                                            "name": "Poha",
+                                            "price": "₹149",
+                                            "veg": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "category": "All Day Breakfast",
+                                    "items": [
+                                        {
+                                            "name": "Butter Bread & Omelette",
+                                            "price": "₹179",
+                                            "veg": false
+                                        },
+                                        {
+                                            "name": "Aloo Paratha with Curd",
+                                            "price": "₹169",
+                                            "veg": true,
+                                            "bestseller": true
+                                        },
+                                        {
+                                            "name": "Stuffed Cheese Croissant",
+                                            "price": "₹159",
+                                            "veg": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "kfc",
+                        "name": "KFC",
+                        "cuisine": "Fried Chicken, Fast Food",
+                        "rating": 4.1,
+                        "price": "₹500 for two",
+                        "location": "Sector 35, Chandigarh",
+                        "distance": "2.7 km",
+                        "image": "https://b.zmtcdn.com/data/pictures/chains/5/18216905/3644d9efc0ecd1b8a3620373493a738a.jpg",
+                        "discount": "FLAT 20% OFF",
+                        "offers": [
+                            {
+                                "icon": "🏷️",
+                                "text": "Flat 20% OFF on pre-booking"
+                            },
+                            {
+                                "icon": "🏷️",
+                                "text": "Use code KFC20"
+                            }
+                        ],
+                        "details": {
+                            "images": [
+                                "https://b.zmtcdn.com/data/pictures/chains/5/18216905/3644d9efc0ecd1b8a3620373493a738a.jpg",
+                                "https://b.zmtcdn.com/data/pictures/chains/5/18216905/72e61e3e31943d222c868a55b4a935af.jpg",
+                                "https://b.zmtcdn.com/data/pictures/chains/5/18216905/4673aae9f00bffd8553534d6a1d9f2a9.jpg"
+                            ],
+                            "about": "KFC is an American fast food restaurant chain known for its bucket chicken and Original Recipe fried chicken made with a 'secret blend' of 11 herbs and spices. Beyond its famous chicken, KFC offers a variety of burgers, wraps, sides, and desserts in a casual, quick-service environment.",
+                            "openingHours": "11:00 AM - 11:00 PM",
+                            "address": "SCO 456, Sector 35-C, Chandigarh, 160035",
+                            "phone": "+91 9876543227",
+                            "facilities": [
+                                "Indoor Seating",
+                                "Home Delivery",
+                                "Takeaway",
+                                "Air Conditioned",
+                                "Online Ordering"
+                            ],
+                            "menu": [
+                                {
+                                    "category": "Chicken",
+                                    "items": [
+                                        {
+                                            "name": "Hot & Crispy Chicken (2 pc)",
+                                            "price": "₹229",
+                                            "veg": false,
+                                            "bestseller": true
+                                        },
+                                        {
+                                            "name": "Bucket for Two",
+                                            "price": "₹599",
+                                            "veg": false,
+                                            "bestseller": true
+                                        },
+                                        {
+                                            "name": "Zinger Burger",
+                                            "price": "₹179",
+                                            "veg": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "category": "Box Meals",
+                                    "items": [
+                                        {
+                                            "name": "Zinger Box",
+                                            "price": "₹299",
+                                            "veg": false,
+                                            "bestseller": true
+                                        },
+                                        {
+                                            "name": "Veg Zinger Box",
+                                            "price": "₹279",
+                                            "veg": true
+                                        },
+                                        {
+                                            "name": "Popcorn Chicken Box",
+                                            "price": "₹199",
+                                            "veg": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "category": "Sides & Beverages",
+                                    "items": [
+                                        {
+                                            "name": "French Fries (Medium)",
+                                            "price": "₹99",
+                                            "veg": true,
+                                            "bestseller": true
+                                        },
+                                        {
+                                            "name": "Pepsi",
+                                            "price": "₹79",
+                                            "veg": true
+                                        },
+                                        {
+                                            "name": "Chocolate Lava Cake",
+                                            "price": "₹109",
+                                            "veg": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "haldirams",
+                        "name": "Haldiram's",
+                        "cuisine": "North Indian, Sweets, Snacks",
+                        "rating": 4.2,
+                        "price": "₹350 for two",
+                        "location": "Sector 22, Chandigarh",
+                        "distance": "1.5 km",
+                        "image": "https://b.zmtcdn.com/data/pictures/chains/6/148606/9c9c5614ae656da63c55327768e32850.jpg",
+                        "discount": "FLAT 10% OFF",
+                        "offers": [
+                            {
+                                "icon": "🏷️",
+                                "text": "Flat 10% OFF on pre-booking"
+                            },
+                            {
+                                "icon": "🏷️",
+                                "text": "Use code HALDIRAM10"
+                            }
+                        ],
+                        "details": {
+                            "images": [
+                                "https://b.zmtcdn.com/data/pictures/chains/6/148606/9c9c5614ae656da63c55327768e32850.jpg",
+                                "https://b.zmtcdn.com/data/pictures/chains/6/148606/acdfaaeb2c1689b8fcf7af0b63082637.jpg",
+                                "https://b.zmtcdn.com/data/pictures/chains/6/148606/4e2d784c3eff61c537d7c61d15f0a4e3.jpg"
+                            ],
+                            "about": "Haldiram's is an iconic Indian restaurant and sweets chain that serves traditional vegetarian North Indian cuisine, chaat, and famous Indian sweets. With decades of culinary heritage, it has become synonymous with authentic taste and quality, offering a wide range of snacks, meals, and desserts in a family-friendly environment.",
+                            "openingHours": "8:00 AM - 11:00 PM",
+                            "address": "SCO 225, Sector 22-C, Chandigarh, 160022",
+                            "phone": "+91 9876543228",
+                            "facilities": [
+                                "Indoor Seating",
+                                "Pure Vegetarian",
+                                "Takeaway",
+                                "Air Conditioned",
+                                "Family Friendly"
+                            ],
+                            "menu": [
+                                {
+                                    "category": "Chaat & Snacks",
+                                    "items": [
+                                        {
+                                            "name": "Raj Kachori",
+                                            "price": "₹130",
+                                            "veg": true,
+                                            "bestseller": true
+                                        },
+                                        {
+                                            "name": "Pani Puri",
+                                            "price": "₹90",
+                                            "veg": true,
+                                            "bestseller": true
+                                        },
+                                        {
+                                            "name": "Aloo Tikki",
+                                            "price": "₹110",
+                                            "veg": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "category": "Main Course",
+                                    "items": [
+                                        {
+                                            "name": "Chole Bhature",
+                                            "price": "₹180",
+                                            "veg": true,
+                                            "bestseller": true
+                                        },
+                                        {
+                                            "name": "Paneer Butter Masala",
+                                            "price": "₹240",
+                                            "veg": true
+                                        },
+                                        {
+                                            "name": "Dal Makhani",
+                                            "price": "₹180",
+                                            "veg": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "category": "Sweets",
+                                    "items": [
+                                        {
+                                            "name": "Rasgulla (2 pcs)",
+                                            "price": "₹80",
+                                            "veg": true
+                                        },
+                                        {
+                                            "name": "Kaju Barfi (100g)",
+                                            "price": "₹180",
+                                            "veg": true,
+                                            "bestseller": true
+                                        },
+                                        {
+                                            "name": "Gulab Jamun (2 pcs)",
+                                            "price": "₹70",
+                                            "veg": true,
+                                            "bestseller": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "starbucks",
+                        "name": "Starbucks",
+                        "cuisine": "Cafe, Coffee, Desserts",
+                        "rating": 4.3,
+                        "price": "₹600 for two",
+                        "location": "Elante Mall, Chandigarh",
+                        "distance": "4.1 km",
+                        "image": "https://b.zmtcdn.com/data/pictures/chains/8/18219558/a6c8129329fee167e9a9d5691dde4d7e.jpg",
+                        "discount": "FLAT 15% OFF",
+                        "offers": [
+                            {
+                                "icon": "🏷️",
+                                "text": "Flat 15% OFF on pre-booking"
+                            },
+                            {
+                                "icon": "🏷️",
+                                "text": "Use code COFFEE15"
+                            }
+                        ],
+                        "details": {
+                            "images": [
+                                "https://b.zmtcdn.com/data/pictures/chains/8/18219558/a6c8129329fee167e9a9d5691dde4d7e.jpg",
+                                "https://b.zmtcdn.com/data/pictures/chains/8/18219558/9609dcdcc5bd12f72dfd8ccc0acb608f.jpg",
+                                "https://b.zmtcdn.com/data/pictures/chains/8/18219558/dc318b8669b38f196a2e53465d633828.jpg"
+                            ],
+                            "about": "Starbucks is a global coffeehouse chain that offers a variety of premium coffee drinks, teas, food items, and merchandise. Known for its distinctive atmosphere with comfortable seating, free Wi-Fi, and customizable beverages, it provides an ideal space for both social gatherings and solo work sessions.",
+                            "openingHours": "10:00 AM - 10:00 PM",
+                            "address": "Ground Floor, Elante Mall, Phase 1, Industrial Area, Chandigarh, 160002",
+                            "phone": "+91 9876543229",
+                            "facilities": [
+                                "Indoor Seating",
+                                "Free Wi-Fi",
+                                "Air Conditioned",
+                                "Wheelchair Accessible",
+                                "Power Outlets"
+                            ],
+                            "menu": [
+                                {
+                                    "category": "Hot Coffee",
+                                    "items": [
+                                        {
+                                            "name": "Cafe Latte",
+                                            "price": "₹240",
+                                            "veg": true,
+                                            "bestseller": true
+                                        },
+                                        {
+                                            "name": "Cappuccino",
+                                            "price": "₹240",
+                                            "veg": true
+                                        },
+                                        {
+                                            "name": "Caramel Macchiato",
+                                            "price": "₹280",
+                                            "veg": true,
+                                            "bestseller": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "category": "Cold Coffee",
+                                    "items": [
+                                        {
+                                            "name": "Java Chip Frappuccino",
+                                            "price": "₹320",
+                                            "veg": true,
+                                            "bestseller": true
+                                        },
+                                        {
+                                            "name": "Caramel Frappuccino",
+                                            "price": "₹320",
+                                            "veg": true
+                                        },
+                                        {
+                                            "name": "Cold Brew",
+                                            "price": "₹270",
+                                            "veg": true
+                                        }
+                                    ]
+                                },
+                                {
+                                    "category": "Food",
+                                    "items": [
+                                        {
+                                            "name": "Chocolate Truffle Cake",
+                                            "price": "₹290",
+                                            "veg": true,
+                                            "bestseller": true
+                                        },
+                                        {
+                                            "name": "Blueberry Muffin",
+                                            "price": "₹220",
+                                            "veg": true
+                                        },
+                                        {
+                                            "name": "Chicken & Mushroom Croissant",
+                                            "price": "₹320",
+                                            "veg": false
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id": "punjabi-by-nature",
+                        "name": "Punjabi By Nature",
+                        "cuisine": "North Indian, Punjabi",
+                        "rating": 4.4,
+                        "price": "₹1000 for two",
+                        "location": "Sector 26, Chandigarh",
+                        "distance": "3.5 km",
+                        "image": "https://b.zmtcdn.com/data/pictures/chains/9/18553659/70e8275a019d422b92ebf14ad128bca5.jpg",
+                        "discount": "FLAT 25% OFF",
+                        "offers": [
+                            {
+                                "icon": "🏷️",
+                                "text": "Flat 25% OFF on pre-booking"
+                            },
+                            {
+                                "icon": "🏷️",
+                                "text": "Use code PUNJABI25"
+                            }
+                        ],
+                        "details": {
+                            "images": [
+                                "https://b.zmtcdn.com/data/pictures/chains/9/18553659/70e8275a019d422b92ebf14ad128bca5.jpg",
+                                "https://b.zmtcdn.com/data/pictures/chains/9/18553659/a437f5209bdcde393f4ef5316a6854ca.jpg",
+                                "https://b.zmtcdn.com/data/pictures/chains/9/18553659/b19778cd61c42c5a7851667cdf79c65c.jpg"
+                            ],
+                            "about": "Punjabi By Nature is a premium North Indian restaurant known for its authentic Punjabi cuisine served with a contemporary twist. With its opulent ambiance, generous portions, and bold flavors, it offers a luxurious dining experience featuring tandoori specialties, rich curries, and creative cocktails.",
+                            "openingHours": "12:00 PM - 11:30 PM",
+                            "address": "SCO 67-68, Sector 26, Chandigarh, 160019",
+                            "phone": "+91 9876543230",
+                            "facilities": [
+                                "Indoor Seating",
+                                "Outdoor Seating",
+                                "Bar",
+                                "Valet Parking",
+                                "Live Music",
+                                "Private Dining Area"
+                            ],
+                            "menu": [
+                                {
+                                    "category": "Starters",
+                                    "items": [
+                                        {
+                                            "name": "Amritsari Fish",
+                                            "price": "₹550",
+                                            "veg": false,
+                                            "bestseller": true
+                                        },
+                                        {
+                                            "name": "Bharwan Tandoori Aloo",
+                                            "price": "₹450",
+                                            "veg": true,
+                                            "bestseller": true
+                                        },
+                                        {
+                                            "name": "Tandoori Lamb Chops",
+                                            "price": "₹750",
+                                            "veg": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "category": "Main Course",
+                                    "items": [
+                                        {
+                                            "name": "Butter Chicken",
+                                            "price": "₹550",
+                                            "veg": false,
+                                            "bestseller": true
+                                        },
+                                        {
+                                            "name": "Dal Makhani",
+                                            "price": "₹450",
+                                            "veg": true,
+                                            "bestseller": true
+                                        },
+                                        {
+                                            "name": "Highway Mutton Curry",
+                                            "price": "₹650",
+                                            "veg": false
+                                        }
+                                    ]
+                                },
+                                {
+                                    "category": "Breads & Rice",
+                                    "items": [
+                                        {
+                                            "name": "Tandoori Roti Basket",
+                                            "price": "₹270",
+                                            "veg": true
+                                        },
+                                        {
+                                            "name": "Garlic Naan",
+                                            "price": "₹120",
+                                            "veg": true,
+                                            "bestseller": true
+                                        },
+                                        {
+                                            "name": "Punjabi Pulao",
+                                            "price": "₹320",
+                                            "veg": true
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
