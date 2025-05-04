@@ -47,27 +47,6 @@ function populateRestaurantDetails(restaurant) {
   // Clear existing content
   restaurantContainer.innerHTML = '';
   
-  // Set the restaurant container background image
-  const style = document.createElement('style');
-  style.textContent = `
-    .restaurant-container::before {
-      background-image: url(${restaurant.image});
-    }
-  `;
-  document.head.appendChild(style);
-  
-  // Create main container elements in the correct order
-  
-  // 1. Add back button
-  const backButton = document.createElement('div');
-  backButton.className = "back-link-container";
-  backButton.innerHTML = `
-    <a href="index.html" class="back-link">
-      <i class="fas fa-arrow-left"></i> Back to restaurants
-    </a>
-  `;
-  restaurantContainer.appendChild(backButton);
-  
   // 2. Create header tabs for Dineout and Order Online
   const headerTabs = document.createElement('div');
   headerTabs.className = 'tabs';
@@ -81,29 +60,42 @@ function populateRestaurantDetails(restaurant) {
   const restaurantInfoCard = document.createElement('div');
   restaurantInfoCard.className = 'restaurant-info-card';
   
+  // Apply the background image to the info card instead of the container
+  restaurantInfoCard.style.backgroundImage = `url(${restaurant.image})`;
+  restaurantInfoCard.style.backgroundSize = 'cover';
+  restaurantInfoCard.style.backgroundPosition = 'center';
+  restaurantInfoCard.style.position = 'relative';
+  
+  // Create an overlay div for the background to dim it
+  const bgOverlay = document.createElement('div');
+  bgOverlay.className = 'bg-overlay';
+  restaurantInfoCard.appendChild(bgOverlay);
+  
   // Calculate a random number for the ratings count (between 5k and 15k)
   const ratingsCount = (Math.floor(Math.random() * 100) + 50) / 10;
   const ratingsCountFormatted = ratingsCount + 'k+';
   
-  restaurantInfoCard.innerHTML = `
-    <div class="restaurant-info-content">
-      <h1 class="restaurant-name">${restaurant.name}</h1>
-      <div class="restaurant-cuisine">${restaurant.cuisine}</div>
-      <div class="restaurant-location">${restaurant.location}</div>
-      
-      <div class="restaurant-meta">
-        <div class="meta-item">
-          <div class="rating-badge">${restaurant.rating} ★</div>
-          <div class="rating-count">Rated by ${ratingsCountFormatted}</div>
-        </div>
-        <div class="meta-divider"></div>
-        <div class="meta-item">
-          <div class="price-badge">${restaurant.price}</div>
-          <div class="price-label">Cost for two</div>
-        </div>
+  // Create a content container to ensure text is above the overlay
+  const infoContent = document.createElement('div');
+  infoContent.className = 'restaurant-info-content';
+  infoContent.innerHTML = `
+    <h1 class="restaurant-name">${restaurant.name}</h1>
+    <div class="restaurant-cuisine">${restaurant.cuisine}</div>
+    <div class="restaurant-location">${restaurant.location}</div>
+    
+    <div class="restaurant-meta">
+      <div class="meta-item">
+        <div class="rating-badge">${restaurant.rating} ★</div>
+        <div class="rating-count">Rated by ${ratingsCountFormatted}</div>
+      </div>
+      <div class="meta-divider"></div>
+      <div class="meta-item">
+        <div class="price-badge">${restaurant.price}</div>
+        <div class="price-label">Cost for two</div>
       </div>
     </div>
   `;
+  restaurantInfoCard.appendChild(infoContent);
   restaurantContainer.appendChild(restaurantInfoCard);
   
   // 4. Create timeline component
@@ -593,6 +585,7 @@ function populateRestaurantDetails(restaurant) {
   setupMenuInteractions();
   setupDealsCarousel();
   setupNavbar();
+  setupAllergiesDialog(); // Add this line
   
   // Log confirmation
   console.log("Restaurant details populated successfully:", restaurant.name);
@@ -1051,3 +1044,274 @@ function setupNavbar() {
     });
   }
 }
+
+// Add this function to handle the allergies dialog
+function setupAllergiesDialog() {
+  const allergiesButton = document.querySelector('.allergies-filter');
+  const allergiesDialog = document.getElementById('allergiesDialog');
+  const closeButton = allergiesDialog.querySelector('.close-dialog');
+  const cancelButton = allergiesDialog.querySelector('.cancel-btn');
+  const applyButton = allergiesDialog.querySelector('.apply-btn');
+  const allergiesTabButtons = allergiesDialog.querySelectorAll('.allergy-tab');
+  const allergiesTabContents = allergiesDialog.querySelectorAll('.allergy-tab-content');
+  const allergyCheckboxes = allergiesDialog.querySelectorAll('.allergy-checkbox');
+  const dietRadios = allergiesDialog.querySelectorAll('.diet-radio');
+  const preferenceSliders = allergiesDialog.querySelectorAll('.preference-slider');
+  
+  // State to track if filter is active
+  let isFilterActive = false;
+  
+  // Open dialog when clicking the filter button
+  if (allergiesButton) {
+    allergiesButton.addEventListener('click', function() {
+      allergiesDialog.classList.add('active');
+      document.body.style.overflow = 'hidden'; // Prevent scrolling when dialog is open
+    });
+  }
+  
+  // Function to close dialog
+  function closeDialog() {
+    allergiesDialog.classList.remove('active');
+    document.body.style.overflow = ''; // Restore scrolling
+  }
+  
+  // Close dialog when clicking the close button
+  if (closeButton) {
+    closeButton.addEventListener('click', closeDialog);
+  }
+  
+  // Close dialog when clicking cancel button without applying changes
+  if (cancelButton) {
+    cancelButton.addEventListener('click', closeDialog);
+  }
+  
+  // Close dialog and apply filters when clicking apply button
+  if (applyButton) {
+    applyButton.addEventListener('click', function() {
+      // Update the filter active state
+      isFilterActive = hasActiveFilters();
+      
+      // Update UI to show filter is active
+      if (isFilterActive) {
+        allergiesButton.classList.add('active');
+        allergiesButton.innerHTML = `
+          <span class="filter-icon">⚠️</span>
+          <span>Allergy Filters On</span>
+          <span class="filter-cross">×</span>
+        `;
+      } else {
+        allergiesButton.classList.remove('active');
+        allergiesButton.innerHTML = `
+          <span class="filter-icon">⚠️</span>
+          <span>Specify Allergies</span>
+          <div class="new-feature-badge">
+            <span class="new-text">NEW</span>
+          </div>
+        `;
+      }
+      
+      // Actually apply the filters to the menu items (simplified implementation)
+      applyFiltersToMenu();
+      
+      // Close the dialog
+      closeDialog();
+    });
+  }
+  
+  // Handle tab switching
+  allergiesTabButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const tabName = this.getAttribute('data-tab');
+      
+      // Update active tab button
+      allergiesTabButtons.forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
+      
+      // Update active tab content
+      allergiesTabContents.forEach(content => {
+        if (content.getAttribute('data-tab-content') === tabName) {
+          content.classList.add('active');
+        } else {
+          content.classList.remove('active');
+        }
+      });
+    });
+  });
+  
+  // Add click handler for the cross button to reset filters
+  if (allergiesButton) {
+    allergiesButton.addEventListener('click', function(event) {
+      // Check if the click was on the cross button
+      if (event.target.classList.contains('filter-cross')) {
+        event.stopPropagation(); // Prevent opening the dialog
+        
+        // Reset all filters
+        resetAllFilters();
+        
+        // Update button state
+        allergiesButton.classList.remove('active');
+        allergiesButton.innerHTML = `
+          <span class="filter-icon">⚠️</span>
+          <span>Specify Allergies</span>
+          <div class="new-feature-badge">
+            <span class="new-text">NEW</span>
+          </div>
+        `;
+        
+        // Reset menu filtering
+        clearFiltersFromMenu();
+        
+        return false;
+      }
+    });
+  }
+  
+  // Helper function to check if any filters are active
+  function hasActiveFilters() {
+    const anyCheckboxChecked = Array.from(allergyCheckboxes).some(cb => cb.checked);
+    const anyNonDefaultRadioSelected = Array.from(dietRadios).some(radio => radio.id !== 'all' && radio.checked);
+    const anySliderNotDefault = Array.from(preferenceSliders).some(slider => slider.value != slider.defaultValue);
+    
+    return anyCheckboxChecked || anyNonDefaultRadioSelected || anySliderNotDefault;
+  }
+  
+  // Helper function to reset all filters
+  function resetAllFilters() {
+    // Reset checkboxes
+    allergyCheckboxes.forEach(checkbox => {
+      checkbox.checked = false;
+    });
+    
+    // Reset radios to default "all" option
+    dietRadios.forEach(radio => {
+      if (radio.id === 'all') {
+        radio.checked = true;
+      } else {
+        radio.checked = false;
+      }
+    });
+    
+    // Reset sliders to default values
+    preferenceSliders.forEach(slider => {
+      slider.value = slider.defaultValue;
+      
+      // Also update the displayed value
+      const valueDisplay = slider.closest('.preference-item').querySelector('.preference-value');
+      if (valueDisplay) {
+        const values = ['None', 'Mild', 'Moderate', 'Spicy', 'Very Spicy'];
+        if (slider.id === 'spicy-slider') {
+          valueDisplay.textContent = values[slider.value - 1];
+        } else if (slider.id === 'onion-garlic-slider') {
+          const values = ['None', 'Minimal', 'Some', 'Preferred', 'Extra'];
+          valueDisplay.textContent = values[slider.value - 1];
+        } else if (slider.id === 'oil-slider') {
+          const values = ['Minimal', 'Low', 'Moderate', 'Rich', 'Extra'];
+          valueDisplay.textContent = values[slider.value - 1];
+        }
+      }
+    });
+  }
+  
+  // Apply filters to menu items
+  function applyFiltersToMenu() {
+    // Get all menu items
+    const menuItems = document.querySelectorAll('.menu-item');
+    
+    // Collect active filters
+    const activeAllergies = Array.from(allergyCheckboxes)
+      .filter(cb => cb.checked)
+      .map(cb => cb.id);
+    
+    const activeDiet = Array.from(dietRadios)
+      .find(radio => radio.checked)?.id;
+    
+    const spiceLevel = document.getElementById('spicy-slider')?.value;
+    const onionGarlicPreference = document.getElementById('onion-garlic-slider')?.value;
+    const oilPreference = document.getElementById('oil-slider')?.value;
+    
+    // Apply filters to each menu item
+    menuItems.forEach(item => {
+      let shouldHide = false;
+      
+      // Check allergies
+      if (activeAllergies.length > 0) {
+        const itemAllergens = item.getAttribute('data-allergens');
+        if (itemAllergens) {
+          const allergensList = itemAllergens.split(',');
+          if (activeAllergies.some(allergy => allergensList.includes(allergy))) {
+            shouldHide = true;
+          }
+        }
+      }
+      
+      // Check diet
+      if (activeDiet && activeDiet !== 'all') {
+        const isJain = item.getAttribute('data-jain') === 'true';
+        const isNavratri = item.getAttribute('data-navratri') === 'true';
+        
+        if ((activeDiet === 'jain' && !isJain) ||
+            (activeDiet === 'navratri' && !isNavratri)) {
+          shouldHide = true;
+        }
+      }
+      
+      // Show or hide the item
+      if (shouldHide) {
+        item.style.display = 'none';
+      } else {
+        item.style.display = '';
+      }
+    });
+    
+    // Check if any items are visible in each category
+    document.querySelectorAll('.menu-category').forEach(category => {
+      const visibleItems = category.querySelectorAll('.menu-item:not([style*="display: none"])');
+      if (visibleItems.length === 0) {
+        // If no visible items, hide the category
+        category.style.display = 'none';
+      } else {
+        // Otherwise show it
+        category.style.display = '';
+      }
+    });
+  }
+  
+  // Clear all filters from menu
+  function clearFiltersFromMenu() {
+    // Show all menu items
+    document.querySelectorAll('.menu-item').forEach(item => {
+      item.style.display = '';
+    });
+    
+    // Show all categories
+    document.querySelectorAll('.menu-category').forEach(category => {
+      category.style.display = '';
+    });
+  }
+  
+  // Update slider value displays
+  preferenceSliders.forEach(slider => {
+    const valueDisplay = slider.closest('.preference-item').querySelector('.preference-value');
+    
+    slider.addEventListener('input', function() {
+      if (slider.id === 'spicy-slider') {
+        const values = ['None', 'Mild', 'Moderate', 'Spicy', 'Very Spicy'];
+        valueDisplay.textContent = values[this.value - 1];
+      } else if (slider.id === 'onion-garlic-slider') {
+        const values = ['None', 'Minimal', 'Some', 'Preferred', 'Extra'];
+        valueDisplay.textContent = values[this.value - 1];
+      } else if (slider.id === 'oil-slider') {
+        const values = ['Minimal', 'Low', 'Moderate', 'Rich', 'Extra'];
+        valueDisplay.textContent = values[this.value - 1];
+      }
+    });
+  });
+}
+
+// Add this to your existing initialization code
+document.addEventListener('DOMContentLoaded', function() {
+  // Other initialization functions...
+  
+  // Setup allergies dialog
+  setupAllergiesDialog();
+});

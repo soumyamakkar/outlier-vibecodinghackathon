@@ -9,6 +9,8 @@
   position: relative;
 }
 
+/* Remove or comment out the old container background styles */
+/*
 .restaurant-container::before {
   content: '';
   position: absolute;
@@ -22,6 +24,7 @@
   z-index: -1;
   pointer-events: none;
 }
+*/
 
 /* Restaurant Banner */
 .restaurant-banner {
@@ -466,9 +469,9 @@
   transform: scale(1.05);
 }
 
-/* Allergies Dialog */
+/* Enhanced Allergies Dialog - Updated Styling */
 .allergies-dialog {
-    font-family: Gilroy !important;
+  font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, sans-serif !important;
   position: fixed;
   top: 0;
   left: 0;
@@ -481,7 +484,7 @@
   z-index: 1000;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s, visibility 0.3s;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .allergies-dialog.active {
@@ -495,6 +498,14 @@
   width: 90%;
   max-width: 500px;
   overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(20px);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+.allergies-dialog.active .dialog-content {
+  transform: translateY(0);
 }
 
 .dialog-header {
@@ -503,12 +514,15 @@
   align-items: center;
   padding: 16px 20px;
   border-bottom: 1px solid #f0f0f0;
+  font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, sans-serif !important;
 }
 
 .dialog-header h3 {
   margin: 0;
   font-size: 18px;
   color: #3e4152;
+  font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-weight: 600;
 }
 
 .close-dialog {
@@ -517,56 +531,231 @@
   font-size: 24px;
   color: #93959f;
   cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.close-dialog:hover {
+  background-color: #f5f5f5;
 }
 
 .dialog-body {
   padding: 20px;
   max-height: 400px;
   overflow-y: auto;
+  font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, sans-serif !important;
 }
 
+/* Allergy tabs */
+.allergy-tabs {
+  display: flex;
+  border-bottom: 1px solid #e9e9eb;
+  margin-bottom: 20px;
+  font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+.allergy-tab {
+  padding: 12px 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  color: #686b78;
+  position: relative;
+  font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.allergy-tab.active {
+  color: #fc8019;
+  font-weight: 600;
+}
+
+.allergy-tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fc8019;
+  transition: opacity 0.2s;
+}
+
+.allergy-tab:hover:not(.active) {
+  color: #3e4152;
+}
+
+/* Allergy content */
+.allergy-tab-content {
+  display: none;
+  font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.allergy-tab-content.active {
+  display: block;
+}
+
+.preference-intro {
+  margin-bottom: 16px;
+  font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+.preference-intro p {
+  font-size: 14px;
+  color: #686b78;
+  margin: 0;
+  font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+/* Allergy options */
 .allergy-options {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
+  font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, sans-serif !important;
 }
 
 .allergy-option {
   display: flex;
   align-items: center;
   gap: 10px;
+  font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+.allergy-option label {
+  font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 15px;
+  color: #3e4152;
+  cursor: pointer;
 }
 
 .allergy-checkbox {
   width: 18px;
   height: 18px;
   accent-color: #FC8019;
+  cursor: pointer;
 }
 
+/* Diet options */
+.diet-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+.diet-option {
+  display: flex;
+  align-items: flex-start;
+  font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+.diet-radio {
+  margin-top: 10px;
+  margin-right: 12px;
+  accent-color: #fc8019;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.diet-option label {
+  font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  cursor: pointer;
+}
+
+.diet-name {
+  font-weight: 600;
+  font-size: 15px;
+  color: #3e4152;
+  margin-bottom: 2px;
+  font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+.diet-desc {
+  font-size: 12px;
+  color: #93959f;
+  font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+/* Dialog footer - Improved buttons */
 .dialog-footer {
   display: flex;
   justify-content: flex-end;
   padding: 16px 20px;
   border-top: 1px solid #f0f0f0;
   gap: 12px;
+  font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+.cancel-btn, .apply-btn {
+  height: 36px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 18px;
+  font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, sans-serif !important;
 }
 
 .cancel-btn {
-  padding: 10px 20px;
   background: none;
   border: 1px solid #e9e9eb;
-  border-radius: 8px;
-  cursor: pointer;
+  color: #3e4152;
+}
+
+.cancel-btn:hover {
+  background-color: #f9f9f9;
 }
 
 .apply-btn {
-  padding: 10px 20px;
   background-color: #FC8019;
   color: white;
   border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 500;
+}
+
+.apply-btn:hover {
+  background-color: #e8741b;
+  box-shadow: 0 2px 8px rgba(252, 128, 25, 0.3);
+}
+
+.diet-preferences-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+  width: 100%;
+  font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+.info-icon {
+  color: #93959f;
+  font-size: 14px;
+}
+
+.info-text {
+  font-size: 12px;
+  color: #93959f;
+  font-family: 'Gilroy', -apple-system, BlinkMacSystemFont, sans-serif !important;
 }
 
 /* Hide the old menu-items class */
@@ -851,7 +1040,7 @@
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 8px;
-  color: #282c3f;
+  color: #fff;
 }
 
 .restaurant-info-card .restaurant-cuisine {
@@ -1623,8 +1812,7 @@
 
 /* Back link container and link styles */
 .back-link-container {
-  padding: 24px 40px 8px;
-  background-color: #fff;
+  padding: 24px 0 16px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -1637,8 +1825,93 @@
   font-weight: 500;
   text-decoration: none;
   gap: 6px;
+  transition: color 0.2s ease;
 }
 
 .back-link:hover {
   color: #FF5200;
+}
+
+.back-link i {
+  font-size: 12px;
+}
+
+/* Add the new restaurant info card styles */
+.restaurant-info-card {
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  color: white;
+  position: relative;
+  padding: 24px;
+}
+
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7));
+  z-index: 0;
+}
+
+.restaurant-info-content {
+  position: relative;
+  z-index: 1;
+}
+
+.restaurant-name {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.restaurant-cuisine {
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.restaurant-location {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 16px;
+}
+
+.restaurant-meta {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.meta-item {
+  padding-right: 20px;
+}
+
+.meta-divider {
+  width: 1px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-right: 20px;
+}
+
+.rating-badge {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: white;
+}
+
+.rating-count, .price-label {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.price-badge {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: white;
 }

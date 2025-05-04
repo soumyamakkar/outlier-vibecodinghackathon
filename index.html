@@ -9,22 +9,289 @@
 </head>
 <body>
 
+  <!-- Update the header location section -->
   <div class="header">
     <div class="logo">
-        <img src="./swiggy-logo.avif" alt="Swiggy" />
-        <div class="location-wrapper">
-          <img src="./location-icon.svg" alt="Location" class="location-icon" />
-          <span class="location">Setup your precise location</span>
+      <img src="./swiggy-logo.avif" alt="Swiggy" />
+      <div class="location-wrapper" id="locationDropdown">
+        <img src="./location-icon.svg" alt="Location" class="location-icon" />
+        <span class="location">Setup your precise location</span>
+        <span class="dropdown-arrow">▾</span>
+        
+        <!-- Location Dropdown Menu -->
+        <div class="location-dropdown">
+          <div class="location-search">
+            <img src="./location-icon.svg" alt="Location" class="location-icon" />
+            <input type="text" placeholder="Search for an area, street name" />
+          </div>
+          <div class="location-gps">
+            <img src="./location-icon.svg" alt="Location" class="location-icon" />
+            <span>Locate me using GPS</span>
+          </div>
         </div>
       </div>
+    </div>
     <div class="search-bar">
       <input type="text" placeholder="Search for restaurant and food" />
+      <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
     </div>
-    <div class="user-icon"></div>
+    <div class="user-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+        <circle cx="12" cy="7" r="4"></circle>
+      </svg>
+    </div>
   </div>
 
   <div class="hero">
     <img src="./dineout-photo.avif">
+  </div>
+
+  <!-- What's on your mind scrollable section -->
+  <div class="whats-on-your-mind">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">What's on your mind</h2>
+        <div class="scroll-controls">
+          <button class="scroll-btn prev-btn" aria-label="Scroll left">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+              <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </button>
+          <button class="scroll-btn next-btn" aria-label="Scroll right">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+              <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <div class="food-carousel">
+        <div class="food-items">
+          <div class="food-item">
+            <img src="./food/pizzas.avif" alt="Pizza">
+          </div>
+          <div class="food-item">
+            <img src="./food/burgers.avif" alt="Burger">
+          </div>
+          <div class="food-item">
+            <img src="./food/cakes.avif" alt="Cakes">
+          </div>
+          <div class="food-item">
+            <img src="./food/dosa.avif" alt="Chinese">
+          </div>
+          <div class="food-item">
+            <img src="./food/north-indian.avif" alt="North Indian">
+          </div>
+          <div class="food-item">
+            <img src="./food/gulab-jamun.avif" alt="South Indian">
+          </div>
+          <div class="food-item">
+            <img src="./food/momos.png" alt="Dessert">
+          </div>
+          <div class="food-item">
+            <img src="./food/ice-cream.avif" alt="Ice Cream">
+          </div>
+          <div class="food-item">
+            <img src="./food/noodles.avif" alt="Coffee">
+          </div>
+          <div class="food-item">
+            <img src="./food/rolls.avif" alt="Rolls">
+          </div>
+          <div class="food-item">
+            <img src="./food/paratha.avif" alt="Sandwich">
+          </div>
+          <div class="food-item">
+            <img src="./food/pasta.avif" alt="Cake">
+          </div>
+          <div class="food-item">
+            <img src="./food/pav-bhaji.avif" alt="Cake">
+          </div>
+          <div class="food-item">
+            <img src="./food/tea.avif" alt="Cake">
+          </div>
+        </div>
+        
+        <!-- Add this progress bar -->
+        <div class="scroll-progress-container">
+          <div class="scroll-progress-bar"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Divider -->
+  <div class="divider-container">
+    <hr class="section-divider">
+  </div>
+
+  <!-- Best Food Outlets Near Me Section -->
+  <div class="food-outlets-section">
+    <div class="section-container">
+      <div class="section-header">
+        <h2 class="section-title">Best Food Outlets Near Me</h2>
+        <div class="scroll-controls">
+          <button class="scroll-btn outlets-prev-btn" aria-label="Scroll left">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+              <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </button>
+          <button class="scroll-btn outlets-next-btn" aria-label="Scroll right">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+              <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+      <div class="outlets-carousel">
+        <div class="outlets-items">
+          <!-- Updated Outlet Cards with Images -->
+          <div class="outlet-card">
+            <div class="outlet-image">
+              <img src="./food/adil-hotel.avif" alt="Adil Hotel">
+            </div>
+            <div class="outlet-content">
+              <div class="outlet-name">Adil Hotel</div>
+              <div class="outlet-rating">4.3 • 35-40 mins</div>
+              <div class="outlet-cuisines">North Indian, Biryani, Tandoor</div>
+              <div class="outlet-location">Chhindwara Locality</div>
+            </div>
+          </div>
+        
+          <div class="outlet-card">
+            <div class="outlet-image">
+              <img src="./food/sai-nath.avif" alt="Hotel Sai Nath & Sai Restaurant">
+            </div>
+            <div class="outlet-content">
+              <div class="outlet-offer">Hotel Sai Nath & Sai Restaurant</div>
+              <div class="outlet-name">Hotel Sai Nath & Sai Restaurant</div>
+              <div class="outlet-rating">4.3 • 40-45 mins</div>
+              <div class="outlet-cuisines">North Indian, South Indian, Chinese, Beverages, Fast Food, Desserts</div>
+              <div class="outlet-location">Chhindwara Locality</div>
+            </div>
+          </div>
+        
+          <div class="outlet-card">
+            <div class="outlet-image">
+              <img src="./food/dev.avif" alt="Dev International">
+            </div>
+            <div class="outlet-content">
+              <div class="outlet-offer">₹125 OFF ABOVE ₹349</div>
+              <div class="outlet-name">Dev International</div>
+              <div class="outlet-rating">4.3 • 45-50 mins</div>
+              <div class="outlet-cuisines">North Indian, Chinese, Fast Food, Beverages</div>
+              <div class="outlet-location">Mohan Nagar</div>
+            </div>
+          </div>
+        
+          <div class="outlet-card">
+            <div class="outlet-image">
+              <img src="./food/mr-gurung.avif" alt="Mr. Gurung Momo & Chinese Corner">
+            </div>
+            <div class="outlet-content">
+              <div class="outlet-offer">₹150 OFF ABOVE ₹349</div>
+              <div class="outlet-name">Mr. Gurung Momo & Chinese Corner</div>
+              <div class="outlet-rating">4.3 • 40-45 mins</div>
+              <div class="outlet-cuisines">Momos, Chinese, Fast Food</div>
+              <div class="outlet-location">Mohan Nagar</div>
+            </div>
+          </div>
+        
+          <div class="outlet-card">
+            <div class="outlet-image">
+              <img src="./food/bakery.avif" alt="Bakery World">
+            </div>
+            <div class="outlet-content">
+              <div class="outlet-name">Bakery World</div>
+              <div class="outlet-rating">4.4 • 45-50 mins</div>
+              <div class="outlet-cuisines">Bakery, Ice Cream, Snacks, Beverages</div>
+              <div class="outlet-location">Parasia Road</div>
+            </div>
+          </div>
+        
+          <div class="outlet-card">
+            <div class="outlet-image">
+              <img src="./food/fusion.avif" alt="The Fusion Lounge">
+            </div>
+            <div class="outlet-content">
+              <div class="outlet-name">The Fusion Lounge</div>
+              <div class="outlet-rating">4.1 • 45-50 mins</div>
+              <div class="outlet-cuisines">South Indian, Chinese, Beverages, Fast Food, Desserts</div>
+              <div class="outlet-location">Railway Station</div>
+            </div>
+          </div>
+        
+          <div class="outlet-card">
+            <div class="outlet-image">
+              <img src="./food/sabghar.avif" alt="Sab Ghar Tak Foods">
+            </div>
+            <div class="outlet-content">
+              <div class="outlet-offer">₹50 OFF ABOVE ₹199</div>
+              <div class="outlet-name">Sab Ghar Tak Foods</div>
+              <div class="outlet-rating">4.4 • 60-65 mins</div>
+              <div class="outlet-cuisines">North Indian, South Indian, Chinese, Beverages, Fast Food, Desserts</div>
+              <div class="outlet-location">Parsia Road</div>
+            </div>
+          </div>
+        
+          <div class="outlet-card">
+            <div class="outlet-image">
+              <img src="./food/satkar.avif" alt="Satkar Restaurant">
+            </div>
+            <div class="outlet-content">
+              <div class="outlet-offer">66% OFF UPTO ₹130</div>
+              <div class="outlet-name">Satkar Restaurant</div>
+              <div class="outlet-rating">4.4 • 35-40 mins</div>
+              <div class="outlet-cuisines">North Indian, South Indian, Indian, Salads, Desserts</div>
+              <div class="outlet-location">Satkar Chowk</div>
+            </div>
+          </div>
+        
+          <div class="outlet-card">
+            <div class="outlet-image">
+              <img src="./food/kathi.avif" alt="Kathi Junction">
+            </div>
+            <div class="outlet-content">
+              <div class="outlet-offer">₹125 OFF ABOVE ₹999</div>
+              <div class="outlet-name">Kathi Junction</div>
+              <div class="outlet-rating">4.2 • 45-50 mins</div>
+              <div class="outlet-cuisines">Rolls, Burgers, Pizzas, Fast Food</div>
+              <div class="outlet-location">Prasia Road</div>
+            </div>
+          </div>
+        
+          <div class="outlet-card">
+            <div class="outlet-image">
+              <img src="./food/belgianwaffl.avif" alt="The Belgian Waffle Co.">
+            </div>
+            <div class="outlet-content">
+              <div class="outlet-name">The Belgian Waffle Co.</div>
+              <div class="outlet-rating">4.7 • 50-55 mins</div>
+              <div class="outlet-cuisines">Waffle, Desserts, Ice Cream, Beverages</div>
+              <div class="outlet-location">Mohan Nagar</div>
+            </div>
+          </div>
+        
+          <div class="outlet-card">
+            <div class="outlet-image">
+              <img src="./food/gupta.avif" alt="Gupta Bhojnalay">
+            </div>
+            <div class="outlet-content">
+              <div class="outlet-name">Gupta Bhojnalay</div>
+              <div class="outlet-rating">4 • 45-50 mins</div>
+              <div class="outlet-cuisines">Fast Food, Indian, Beverages</div>
+              <div class="outlet-location">Chhindwara Locality</div>
+            </div>
+          </div>
+        </div>
+      
+
+      </div>
+    </div>
   </div>
 
   <div class="tabs">
@@ -79,6 +346,77 @@
   <!-- Get the App Section - Simplified with single image -->
   <div class="get-app">
     <img src="./get-the-app.avif" alt="Get the Swiggy App" class="get-app-img">
+  </div>
+
+  <!-- Popular Categories Section -->
+  <div class="popular-categories-section">
+    <div class="category-container">
+      <!-- Order online Cuisine Restaurants Near Me -->
+      <div class="category-group">
+        <h3 class="category-title">Order online Cuisine Restaurants Near Me</h3>
+        <div class="category-buttons">
+          <button class="category-btn">Bakery Restaurants near me</button>
+          <button class="category-btn">Beverages Restaurants near me</button>
+          <button class="category-btn">Bihari Restaurants near me</button>
+          <button class="category-btn">Biryani Restaurants near me</button>
+          <button class="category-btn">Burgers Restaurants near me</button>
+          <button class="category-btn">Cafe Restaurants near me</button>
+          <button class="category-btn">Chaat Restaurants near me</button>
+          <button class="category-btn">Chinese Restaurants near me</button>
+          <button class="category-btn">Continental Restaurants near me</button>
+          <button class="category-btn">Desserts Restaurants near me</button>
+          <button class="category-btn">Fast Food Restaurants near me</button>
+        </div>
+        <button class="show-more-btn">
+          Show More
+          <span class="dropdown-arrow">&#9660;</span>
+        </button>
+      </div>
+  
+      <!-- Restaurant Chains Near Me -->
+      <div class="category-group">
+        <h3 class="category-title">Restaurant Chains Near Me</h3>
+        <div class="category-buttons">
+          <button class="category-btn">CakeZone</button>
+          <button class="category-btn">Gourmet Ice Cream Cakes by Baskin Robbins</button>
+          <button class="category-btn">The Good Bowl</button>
+          <button class="category-btn">Kouzina Kafe - The Food Court</button>
+          <button class="category-btn">Keventers Ice Cream</button>
+          <button class="category-btn">BK Cafe</button>
+          <button class="category-btn">Taco Bell</button>
+          <button class="category-btn">The Dessert Heaven - Pure Veg</button>
+          <button class="category-btn">Chinese Wok</button>
+          <button class="category-btn">ITC Fabelle Chocolates</button>
+          <button class="category-btn">Indiana Burgers</button>
+        </div>
+        <button class="show-more-btn">
+          Show More
+          <span class="dropdown-arrow">&#9660;</span>
+        </button>
+      </div>
+  
+      <!-- Order Popular Dishes Online Near Me -->
+      <div class="category-group">
+        <h3 class="category-title">Order Popular Dishes Online Near Me</h3>
+        <div class="category-buttons">
+          <button class="category-btn">Panner Near Me</button>
+          <button class="category-btn">Rasgulla Near Me</button>
+          <button class="category-btn">Brownie Near Me</button>
+          <button class="category-btn">Mushroom Masala Near Me</button>
+          <button class="category-btn">Butter Naan Near Me</button>
+          <button class="category-btn">Dahi Vada Near Me</button>
+          <button class="category-btn">Mutton Curry Near Me</button>
+          <button class="category-btn">Veg Pizza Near Me</button>
+          <button class="category-btn">French Fries Near Me</button>
+          <button class="category-btn">Fried Chicken Near Me</button>
+          <button class="category-btn">Idli Near Me</button>
+        </div>
+        <button class="show-more-btn">
+          Show More
+          <span class="dropdown-arrow">&#9660;</span>
+        </button>
+      </div>
+    </div>
   </div>
 
   <!-- Footer section -->

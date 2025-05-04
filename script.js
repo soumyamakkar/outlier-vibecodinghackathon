@@ -52,6 +52,49 @@ document.addEventListener('DOMContentLoaded', function() {
       seeMoreTextBtn.textContent = 'see less';
     }
   });
+
+  // Set up show more buttons
+  const showMoreBtns = document.querySelectorAll('.show-more-btn');
+  
+  showMoreBtns.forEach(btn => {
+    // Initially show only 8 buttons (2 rows of 4)
+    const categoryButtons = btn.previousElementSibling;
+    const buttons = categoryButtons.querySelectorAll('.category-btn');
+    
+    // Hide buttons beyond the first 8
+    for (let i = 8; i < buttons.length; i++) {
+      buttons[i].style.display = 'none';
+    }
+    
+    let expanded = false;
+    
+    btn.addEventListener('click', function() {
+      if (!expanded) {
+        // Show all buttons
+        buttons.forEach(button => {
+          button.style.display = '';
+        });
+        btn.innerHTML = 'Show Less <span class="dropdown-arrow" style="transform: rotate(180deg);">&#9660;</span>';
+        expanded = true;
+      } else {
+        // Hide buttons beyond the first 8
+        for (let i = 8; i < buttons.length; i++) {
+          buttons[i].style.display = 'none';
+        }
+        btn.innerHTML = 'Show More <span class="dropdown-arrow">&#9660;</span>';
+        expanded = false;
+      }
+    });
+  });
+
+  // Food carousel functionality
+  setupFoodCarousel();
+  
+  // Outlets carousel functionality
+  setupOutletsCarousel();
+
+  // Add sticky header functionality
+  setupStickyHeader();
 });
 
 // Function to render restaurant cards
@@ -103,5 +146,191 @@ function setupRestaurantCardClickHandlers() {
     
     // Add cursor pointer to make it clear it's clickable
     card.style.cursor = 'pointer';
+  });
+}
+
+// Function to set up food carousel
+function setupFoodCarousel() {
+  const carousel = document.querySelector('.food-items');
+  const prevBtn = document.querySelector('.prev-btn');
+  const nextBtn = document.querySelector('.next-btn');
+  const progressBar = document.querySelector('.scroll-progress-bar');
+  const progressContainer = document.querySelector('.scroll-progress-container');
+  
+  if (!carousel || !prevBtn || !nextBtn || !progressBar) return;
+  
+  // Initial check to disable prev button if at start
+  checkScrollButtons();
+  updateProgressBar();
+  
+  // Scroll left when clicking prev button
+  prevBtn.addEventListener('click', () => {
+    carousel.scrollBy({ left: -500, behavior: 'smooth' });
+    setTimeout(() => {
+      checkScrollButtons();
+      updateProgressBar();
+    }, 350); // Check after scroll animation
+  });
+  
+  // Scroll right when clicking next button
+  nextBtn.addEventListener('click', () => {
+    carousel.scrollBy({ left: 500, behavior: 'smooth' });
+    setTimeout(() => {
+      checkScrollButtons();
+      updateProgressBar();
+    }, 350); // Check after scroll animation
+  });
+  
+  // Check scroll position on scroll
+  carousel.addEventListener('scroll', () => {
+    checkScrollButtons();
+    updateProgressBar();
+  });
+  
+  // Disable/enable buttons based on scroll position
+  function checkScrollButtons() {
+    const isAtStart = carousel.scrollLeft <= 0;
+    const isAtEnd = carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 10;
+    
+    prevBtn.disabled = isAtStart;
+    nextBtn.disabled = isAtEnd;
+    
+    prevBtn.style.opacity = isAtStart ? '0.5' : '1';
+    nextBtn.style.opacity = isAtEnd ? '0.5' : '1';
+  }
+  
+  // Update progress bar based on scroll position
+  function updateProgressBar() {
+    const scrollPosition = carousel.scrollLeft;
+    const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+    
+    if (maxScroll <= 0) return;
+    
+    // Calculate maximum translation distance
+    const maxTranslation = progressContainer.clientWidth - progressBar.clientWidth;
+    
+    // Apply translation transform based on scroll percentage
+    const translation = (scrollPosition / maxScroll) * maxTranslation;
+    
+    // Move the progress indicator from left to right
+    progressBar.style.transform = `translateX(${translation}px)`;
+  }
+  
+  // Handle window resize
+  window.addEventListener('resize', () => {
+    checkScrollButtons();
+    updateProgressBar();
+  });
+}
+
+// Function to set up outlets carousel
+function setupOutletsCarousel() {
+  const carousel = document.querySelector('.outlets-items');
+  const prevBtn = document.querySelector('.outlets-prev-btn');
+  const nextBtn = document.querySelector('.outlets-next-btn');
+  const progressBar = document.querySelector('.scroll-progress-bar');
+  const progressContainer = document.querySelector('.scroll-progress-container');
+  
+  if (!carousel || !prevBtn || !nextBtn || !progressBar || !progressContainer) return;
+  
+  // Initial check to disable prev button if at start and update progress bar
+  checkScrollButtons();
+  updateProgressBar();
+  
+  // Scroll left when clicking prev button
+  prevBtn.addEventListener('click', () => {
+    carousel.scrollBy({ left: -600, behavior: 'smooth' });
+    setTimeout(() => {
+      checkScrollButtons();
+      updateProgressBar();
+    }, 350); // Check after scroll animation
+  });
+  
+  // Scroll right when clicking next button
+  nextBtn.addEventListener('click', () => {
+    carousel.scrollBy({ left: 600, behavior: 'smooth' });
+    setTimeout(() => {
+      checkScrollButtons();
+      updateProgressBar();
+    }, 350); // Check after scroll animation
+  });
+  
+  // Check scroll position and update progress bar on scroll
+  carousel.addEventListener('scroll', () => {
+    checkScrollButtons();
+    updateProgressBar();
+    
+    // Request animation frame for smoother updates during scrolling
+    requestAnimationFrame(updateProgressBar);
+  });
+  
+  // Disable/enable buttons based on scroll position
+  function checkScrollButtons() {
+    const isAtStart = carousel.scrollLeft <= 0;
+    const isAtEnd = carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 10;
+    
+    prevBtn.disabled = isAtStart;
+    nextBtn.disabled = isAtEnd;
+    
+    prevBtn.style.opacity = isAtStart ? '0.5' : '1';
+    nextBtn.style.opacity = isAtEnd ? '0.5' : '1';
+  }
+  
+  // Update progress bar based on scroll position
+  function updateProgressBar() {
+    const scrollPosition = carousel.scrollLeft;
+    const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+    
+    if (maxScroll <= 0) return;
+    
+    // Calculate the position as a percentage
+    const scrollPercentage = (scrollPosition / maxScroll);
+    
+    // Calculate maximum translation distance
+    const maxTranslation = progressContainer.clientWidth - progressBar.clientWidth;
+    
+    // Apply translation transform based on scroll percentage
+    const translation = maxTranslation * scrollPercentage;
+    
+    // Apply the transform - this moves the small bar from left to right
+    progressBar.style.transform = `translateX(${translation}px)`;
+  }
+  
+  // Handle window resize
+  window.addEventListener('resize', () => {
+    checkScrollButtons();
+    updateProgressBar();
+  });
+}
+
+// Function to make header sticky after scrolling
+function setupStickyHeader() {
+  const header = document.getElementById('stickyHeader');
+  if (!header) return;
+  
+  // Create a spacer element to prevent content jump when header becomes sticky
+  const spacer = document.createElement('div');
+  spacer.className = 'sticky-spacer';
+  header.parentNode.insertBefore(spacer, header.nextSibling);
+  
+  // Get header height for the spacer
+  const headerHeight = header.offsetHeight;
+  
+  // Set the threshold for when the header becomes sticky
+  const scrollThreshold = 100; // Start sticky behavior after scrolling down 100px
+  
+  // Handle scroll event
+  window.addEventListener('scroll', () => {
+    const scrollPosition = window.scrollY;
+    
+    if (scrollPosition > scrollThreshold) {
+      header.classList.add('sticky');
+      spacer.classList.add('active');
+      spacer.style.height = `${headerHeight}px`;
+    } else {
+      header.classList.remove('sticky');
+      spacer.classList.remove('active');
+      spacer.style.height = '0';
+    }
   });
 }
